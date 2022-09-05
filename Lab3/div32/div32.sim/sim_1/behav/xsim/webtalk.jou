@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Feb 14 00:40:11 2022
+# Process ID: 40948
+# Current directory: C:/Users/lenovo/Desktop/Computer Organization Lab/Lab3/div32/div32.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/lenovo/Desktop/Computer Organization Lab/Lab3/div32/div32.sim/sim_1/behav/xsim/xsim.dir/div32_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/lenovo/Desktop/Computer Organization Lab/Lab3/div32/div32.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/lenovo/Desktop/Computer Organization Lab/Lab3/div32/div32.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/lenovo/Desktop/Computer -notrace

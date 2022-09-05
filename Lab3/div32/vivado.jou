@@ -1,0 +1,79 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Feb 13 23:11:36 2022
+# Process ID: 7200
+# Current directory: C:/Users/lenovo/Desktop/Computer Organization Lab/Lab3/div32
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent35548 C:\Users\lenovo\Desktop\Computer Organization Lab\Lab3\div32\div32.xpr
+# Log file: C:/Users/lenovo/Desktop/Computer Organization Lab/Lab3/div32/vivado.log
+# Journal file: C:/Users/lenovo/Desktop/Computer Organization Lab/Lab3/div32\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab3/div32/div32.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source div32_tb.tcl
+restart
+run all
+add_bp {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab3/div32/div32.srcs/sources_1/new/div32.v} 55
+remove_bps -file {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab3/div32/div32.srcs/sources_1/new/div32.v} -line 55
+add_bp {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab3/div32/div32.srcs/sim_1/new/div32_tb.v} 64
+remove_bps -file {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab3/div32/div32.srcs/sim_1/new/div32_tb.v} -line 64
+close_sim
+launch_simulation
+source div32_tb.tcl
+close_sim
+launch_simulation
+source div32_tb.tcl
+run 400 ns
+run 400 ns
+close_sim
+launch_simulation
+source div32_tb.tcl
+close_sim
+launch_simulation
+source div32_tb.tcl
+run 400 ns
+run 400 ns
+close_sim
+launch_simulation
+launch_simulation
+source div32_tb.tcl
+close_sim
+launch_simulation
+source div32_tb.tcl
+close_sim
+launch_simulation
+source div32_tb.tcl
+close_sim
+launch_simulation
+source div32_tb.tcl
+close_sim
+launch_simulation
+source div32_tb.tcl
+close_sim
+launch_simulation
+source div32_tb.tcl
+close_sim
+launch_simulation
+source div32_tb.tcl
+close_sim
+launch_simulation
+source div32_tb.tcl
+close_sim
+launch_simulation
+source div32_tb.tcl
+close_sim
+launch_simulation
+source div32_tb.tcl
+close_sim
+launch_simulation
+source div32_tb.tcl
+close_sim
+launch_simulation
+source div32_tb.tcl
+close_sim
+launch_simulation
+source div32_tb.tcl
+close_sim
