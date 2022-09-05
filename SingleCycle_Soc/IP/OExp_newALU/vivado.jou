@@ -1,0 +1,122 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Apr 15 11:59:19 2022
+# Process ID: 27612
+# Current directory: C:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/IP/OExp_newALU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20924 C:\Users\lenovo\Desktop\Computer Organization Lab\Lab4\Lab4_final\IP\OExp_newALU\OExp_newALU.xpr
+# Log file: C:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/IP/OExp_newALU/vivado.log
+# Journal file: C:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/IP/OExp_newALU\vivado.jou
+#-----------------------------------------------------------start_gui
+open_project {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/IP/OExp_newALU/OExp_newALU.xpr}
+uupdate_compile_order -fileset sources_1ipx::package_project -root_dir {c:/users/lenovo/desktop/computer organization lab/lab4/lab4_final/ip/oexp_newalu/oexp_newalu.srcs} -vendor xilinx.com -library user -taxonomy /UserIP -force
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path {c:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/IP/OExp_newALU/OExp_newALU.srcs}
+close_project
+open_project {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_test/Lab4_test/Lab4_test.xpr}
+update_compile_order -fileset sources_1
+close_project
+open_project {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.xpr}
+update_compile_order -fileset sources_1
+close_project
+open_project {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/IP/DataPath_Int/DataPath_Int.xpr}
+update_compile_order -fileset sources_1
+upgrade_ip -vlnv xilinx.com:user:ALU:1.0 [get_ips  ALU_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips ALU_0] -no_script -sync -force -quiet
+generate_target all [get_files  {{C:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/IP/DataPath_Int/DataPath_Int.srcs/sources_1/ip/ALU_0_1/ALU_0.xci}}]
+export_ip_user_files -of_objects [get_files {{C:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/IP/DataPath_Int/DataPath_Int.srcs/sources_1/ip/ALU_0_1/ALU_0.xci}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{C:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/IP/DataPath_Int/DataPath_Int.srcs/sources_1/ip/ALU_0_1/ALU_0.xci}}] -directory {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/IP/DataPath_Int/DataPath_Int.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/IP/DataPath_Int/DataPath_Int.ip_user_files} -ipstatic_source_dir {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/IP/DataPath_Int/DataPath_Int.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/IP/DataPath_Int/DataPath_Int.cache/compile_simlib/modelsim} {questa=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/IP/DataPath_Int/DataPath_Int.cache/compile_simlib/questa} {riviera=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/IP/DataPath_Int/DataPath_Int.cache/compile_simlib/riviera} {activehdl=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/IP/DataPath_Int/DataPath_Int.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+ipx::package_project -root_dir {c:/users/lenovo/desktop/computer organization lab/lab4/lab4_final/ip/datapath_int/datapath_int.srcs/sources_1} -vendor xilinx.com -library user -taxonomy /UserIP -force
+ipx::add_bus_parameter POLARITY [ipx::get_bus_interfaces rst -of_objects [ipx::current_core]]
+set_property value ACTIVE_HIGH [ipx::get_bus_parameters POLARITY -of_objects [ipx::get_bus_interfaces rst -of_objects [ipx::current_core]]]
+ipx::add_bus_parameter ASSOCIATED_BUSIF [ipx::get_bus_interfaces clk -of_objects [ipx::current_core]]
+set_property value clk [ipx::get_bus_parameters ASSOCIATED_BUSIF -of_objects [ipx::get_bus_interfaces clk -of_objects [ipx::current_core]]]
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path {c:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/IP}
+close_project
+open_project {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.xpr}
+update_compile_order -fileset sources_1
+upgrade_ip -vlnv xilinx.com:user:DataPath_more:1.0 [get_ips  DataPath_more_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips DataPath_more_0] -no_script -sync -force -quiet
+generate_target all [get_files  {{C:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.srcs/sources_1/ip/DataPath_more_0/DataPath_more_0.xci}}]
+export_ip_user_files -of_objects [get_files {{C:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.srcs/sources_1/ip/DataPath_more_0/DataPath_more_0.xci}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{C:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.srcs/sources_1/ip/DataPath_more_0/DataPath_more_0.xci}}] -directory {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.ip_user_files} -ipstatic_source_dir {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.cache/compile_simlib/modelsim} {questa=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.cache/compile_simlib/questa} {riviera=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.cache/compile_simlib/riviera} {activehdl=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+close_project
+open_project {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/IP/SCPU_ctrl_Int/SCPU_ctrl_Int.xpr}
+update_compile_order -fileset sources_1
+ipx::package_project -root_dir {c:/users/lenovo/desktop/computer organization lab/lab4/lab4_final/ip/scpu_ctrl_int/scpu_ctrl_int.srcs/sources_1/new} -vendor xilinx.com -library user -taxonomy /UserIP -force
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path {c:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/IP/SCPU_ctrl_Int/SCPU_ctrl_Int.srcs/sources_1/new}
+close_project
+open_project {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.xpr}
+update_compile_order -fileset sources_1
+close_project
+open_project {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/IP/SCPU_ctrl_Int/SCPU_ctrl_Int.xpr}
+update_compile_order -fileset sources_1
+ipx::package_project -root_dir {c:/users/lenovo/desktop/computer organization lab/lab4/lab4_final/ip/scpu_ctrl_int/scpu_ctrl_int.srcs/sources_1/new} -vendor xilinx.com -library user -taxonomy /UserIP -force
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path {c:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/IP/SCPU_ctrl_Int/SCPU_ctrl_Int.srcs/sources_1/new}
+close_project
+open_project {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.xpr}
+update_compile_order -fileset sources_1
+upgrade_ip -srcset SCPU_ctrl_Int_0 -vlnv xilinx.com:user:SCPU_ctrl_Int:1.0 [get_ips  SCPU_ctrl_Int_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips SCPU_ctrl_Int_0] -no_script -sync -force -quiet
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_project
+open_project {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/IP/SCPU_ctrl_Int/SCPU_ctrl_Int.xpr}
+update_compile_order -fileset sources_1
+ipx::package_project -root_dir {c:/users/lenovo/desktop/computer organization lab/lab4/lab4_final/ip/scpu_ctrl_int/scpu_ctrl_int.srcs/sources_1/new} -vendor xilinx.com -library user -taxonomy /UserIP -force
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path {c:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/IP/SCPU_ctrl_Int/SCPU_ctrl_Int.srcs/sources_1/new}
+close_project
+open_project {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.xpr}
+update_compile_order -fileset sources_1
+upgrade_ip -srcset SCPU_ctrl_Int_0 -vlnv xilinx.com:user:SCPU_ctrl_Int:1.0 [get_ips  SCPU_ctrl_Int_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips SCPU_ctrl_Int_0] -no_script -sync -force -quiet
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+update_ip_catalog -rebuild
+ipx::package_project -root_dir {c:/users/lenovo/desktop/computer organization lab/lab4/lab4_final/scpu/scpu.srcs/sources_1} -vendor xilinx.com -library user -taxonomy /UserIP -force
+ipx::add_bus_parameter POLARITY [ipx::get_bus_interfaces rst -of_objects [ipx::current_core]]
+set_property value ACTIVE_HIGH [ipx::get_bus_parameters POLARITY -of_objects [ipx::get_bus_interfaces rst -of_objects [ipx::current_core]]]
+ipx::add_bus_parameter ASSOCIATED_BUSIF [ipx::get_bus_interfaces clk -of_objects [ipx::current_core]]
+set_property value clk [ipx::get_bus_parameters ASSOCIATED_BUSIF -of_objects [ipx::get_bus_interfaces clk -of_objects [ipx::current_core]]]
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path {c:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.srcs/sources_1}
+close_project
+open_project {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_test/Lab4_test/Lab4_test.xpr}
+update_compile_order -fileset sources_1
+upgrade_ip -vlnv xilinx.com:user:SCPU:1.0 [get_ips  SCPU_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips SCPU_0] -no_script -sync -force -quiet
+generate_target all [get_files  {{C:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_test/Lab4_test/Lab4_test.srcs/sources_1/ip/SCPU_0/SCPU_0.xci}}]
+export_ip_user_files -of_objects [get_files {{C:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_test/Lab4_test/Lab4_test.srcs/sources_1/ip/SCPU_0/SCPU_0.xci}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{C:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_test/Lab4_test/Lab4_test.srcs/sources_1/ip/SCPU_0/SCPU_0.xci}}] -directory {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_test/Lab4_test/Lab4_test.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_test/Lab4_test/Lab4_test.ip_user_files} -ipstatic_source_dir {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_test/Lab4_test/Lab4_test.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_test/Lab4_test/Lab4_test.cache/compile_simlib/modelsim} {questa=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_test/Lab4_test/Lab4_test.cache/compile_simlib/questa} {riviera=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_test/Lab4_test/Lab4_test.cache/compile_simlib/riviera} {activehdl=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_test/Lab4_test/Lab4_test.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+launch_simulation

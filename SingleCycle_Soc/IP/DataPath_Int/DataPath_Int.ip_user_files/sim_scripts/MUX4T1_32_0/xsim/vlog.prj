@@ -1,0 +1,7 @@
+verilog xil_defaultlib  \
+"../../../../DataPath_Int.srcs/sources_1/ip/MUX4T1_32_0/MUX4T1_32.v" \
+"../../../../DataPath_Int.srcs/sources_1/ip/MUX4T1_32_0/sim/MUX4T1_32_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

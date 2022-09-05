@@ -1,0 +1,450 @@
+
+*** Running vivado
+    with args -log SCPU.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source SCPU.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source SCPU.tcl -notrace
+Command: synth_design -top SCPU -part xc7k160tffg676-2L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k160t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k160t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 39220 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 402.090 ; gain = 94.773
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'SCPU' [C:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.srcs/sources_1/new/SCPU.v:3]
+INFO: [Synth 8-638] synthesizing module 'SCPU_ctrl_Int_0' [C:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.runs/synth_1/.Xil/Vivado-35380-LAPTOP-GIMOV2AL/realtime/SCPU_ctrl_Int_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'SCPU_ctrl_Int_0' (1#1) [C:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.runs/synth_1/.Xil/Vivado-35380-LAPTOP-GIMOV2AL/realtime/SCPU_ctrl_Int_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'DataPath_more_0' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.srcs/sources_1/ip/DataPath_more_0/synth/DataPath_more_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'DataPath_more' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.srcs/sources_1/ip/DataPath_more_0/new/DataPath_Int.v:3]
+INFO: [Synth 8-638] synthesizing module 'ImmGen_0' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.srcs/sources_1/ip/DataPath_more_0/ip/ImmGen_0/synth/ImmGen_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'ImmGen' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.srcs/sources_1/ip/DataPath_more_0/ip/ImmGen_0/ImmGen.v:3]
+INFO: [Synth 8-256] done synthesizing module 'ImmGen' (2#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.srcs/sources_1/ip/DataPath_more_0/ip/ImmGen_0/ImmGen.v:3]
+INFO: [Synth 8-256] done synthesizing module 'ImmGen_0' (3#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.srcs/sources_1/ip/DataPath_more_0/ip/ImmGen_0/synth/ImmGen_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'add_32_0' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.srcs/sources_1/ip/DataPath_more_0/ip/add_32_0/synth/add_32_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'add_32' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.srcs/sources_1/ip/DataPath_more_0/ip/add_32_1/add_32.v:23]
+INFO: [Synth 8-256] done synthesizing module 'add_32' (4#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.srcs/sources_1/ip/DataPath_more_0/ip/add_32_1/add_32.v:23]
+INFO: [Synth 8-256] done synthesizing module 'add_32_0' (5#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.srcs/sources_1/ip/DataPath_more_0/ip/add_32_0/synth/add_32_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'add_32_1' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.srcs/sources_1/ip/DataPath_more_0/ip/add_32_1/synth/add_32_1.v:57]
+INFO: [Synth 8-256] done synthesizing module 'add_32_1' (6#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.srcs/sources_1/ip/DataPath_more_0/ip/add_32_1/synth/add_32_1.v:57]
+INFO: [Synth 8-638] synthesizing module 'MUX2T1_32_1' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.srcs/sources_1/ip/DataPath_more_0/ip/MUX2T1_32_1/synth/MUX2T1_32_1.v:57]
+INFO: [Synth 8-638] synthesizing module 'MUX2T1_32' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.srcs/sources_1/ip/DataPath_more_0/ip/MUX2T1_32_0/MUX2T1_32.v:23]
+INFO: [Synth 8-256] done synthesizing module 'MUX2T1_32' (7#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.srcs/sources_1/ip/DataPath_more_0/ip/MUX2T1_32_0/MUX2T1_32.v:23]
+INFO: [Synth 8-256] done synthesizing module 'MUX2T1_32_1' (8#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.srcs/sources_1/ip/DataPath_more_0/ip/MUX2T1_32_1/synth/MUX2T1_32_1.v:57]
+INFO: [Synth 8-638] synthesizing module 'MUX4T1_32_0' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.srcs/sources_1/ip/DataPath_more_0/ip/MUX4T1_32_0/synth/MUX4T1_32_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'MUX4T1_32' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.srcs/sources_1/ip/DataPath_more_0/ip/MUX4T1_32_1/MUX4T1_32.v:23]
+INFO: [Synth 8-256] done synthesizing module 'MUX4T1_32' (9#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.srcs/sources_1/ip/DataPath_more_0/ip/MUX4T1_32_1/MUX4T1_32.v:23]
+INFO: [Synth 8-256] done synthesizing module 'MUX4T1_32_0' (10#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.srcs/sources_1/ip/DataPath_more_0/ip/MUX4T1_32_0/synth/MUX4T1_32_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'MUX4T1_32_1' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.srcs/sources_1/ip/DataPath_more_0/ip/MUX4T1_32_1/synth/MUX4T1_32_1.v:57]
+INFO: [Synth 8-256] done synthesizing module 'MUX4T1_32_1' (11#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.srcs/sources_1/ip/DataPath_more_0/ip/MUX4T1_32_1/synth/MUX4T1_32_1.v:57]
+INFO: [Synth 8-638] synthesizing module 'MUX2T1_32_0' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.srcs/sources_1/ip/DataPath_more_0/ip/MUX2T1_32_0/synth/MUX2T1_32_0.v:57]
+INFO: [Synth 8-256] done synthesizing module 'MUX2T1_32_0' (12#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.srcs/sources_1/ip/DataPath_more_0/ip/MUX2T1_32_0/synth/MUX2T1_32_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'Regs_0' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.srcs/sources_1/ip/DataPath_more_0/ip/Regs_0/synth/Regs_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'Regs' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.srcs/sources_1/ip/DataPath_more_0/ip/Regs_0/sources_1/new/Regs.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Regs' (13#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.srcs/sources_1/ip/DataPath_more_0/ip/Regs_0/sources_1/new/Regs.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Regs_0' (14#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.srcs/sources_1/ip/DataPath_more_0/ip/Regs_0/synth/Regs_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'ALU_0' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.srcs/sources_1/ip/DataPath_more_0/ip/ALU_0_1/synth/ALU_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'ALU' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.srcs/sources_1/ip/DataPath_more_0/ip/ALU_0_1/sources_1/new/ALU.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.srcs/sources_1/ip/DataPath_more_0/ip/ALU_0_1/sources_1/new/ALU.v:29]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (15#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.srcs/sources_1/ip/DataPath_more_0/ip/ALU_0_1/sources_1/new/ALU.v:3]
+INFO: [Synth 8-256] done synthesizing module 'ALU_0' (16#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.srcs/sources_1/ip/DataPath_more_0/ip/ALU_0_1/synth/ALU_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'REG32_0' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.srcs/sources_1/ip/DataPath_more_0/ip/REG32_0/synth/REG32_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'REG32' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.srcs/sources_1/ip/DataPath_more_0/ip/REG32_0/PC.v:3]
+INFO: [Synth 8-256] done synthesizing module 'REG32' (17#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.srcs/sources_1/ip/DataPath_more_0/ip/REG32_0/PC.v:3]
+INFO: [Synth 8-256] done synthesizing module 'REG32_0' (18#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.srcs/sources_1/ip/DataPath_more_0/ip/REG32_0/synth/REG32_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'RV_Int_0' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.srcs/sources_1/ip/DataPath_more_0/ip/RV_Int_0/synth/RV_Int_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'RV_Int' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.srcs/sources_1/ip/DataPath_more_0/ip/RV_Int_0/RV_Int.v:3]
+INFO: [Synth 8-256] done synthesizing module 'RV_Int' (19#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.srcs/sources_1/ip/DataPath_more_0/ip/RV_Int_0/RV_Int.v:3]
+INFO: [Synth 8-256] done synthesizing module 'RV_Int_0' (20#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.srcs/sources_1/ip/DataPath_more_0/ip/RV_Int_0/synth/RV_Int_0.v:57]
+INFO: [Synth 8-256] done synthesizing module 'DataPath_more' (21#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.srcs/sources_1/ip/DataPath_more_0/new/DataPath_Int.v:3]
+INFO: [Synth 8-256] done synthesizing module 'DataPath_more_0' (22#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.srcs/sources_1/ip/DataPath_more_0/synth/DataPath_more_0.v:57]
+INFO: [Synth 8-256] done synthesizing module 'SCPU' (23#1) [C:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.srcs/sources_1/new/SCPU.v:3]
+WARNING: [Synth 8-3331] design RV_Int has unconnected port clk
+WARNING: [Synth 8-3331] design ImmGen has unconnected port inst_field[6]
+WARNING: [Synth 8-3331] design ImmGen has unconnected port inst_field[5]
+WARNING: [Synth 8-3331] design ImmGen has unconnected port inst_field[4]
+WARNING: [Synth 8-3331] design ImmGen has unconnected port inst_field[3]
+WARNING: [Synth 8-3331] design ImmGen has unconnected port inst_field[2]
+WARNING: [Synth 8-3331] design ImmGen has unconnected port inst_field[1]
+WARNING: [Synth 8-3331] design ImmGen has unconnected port inst_field[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 454.223 ; gain = 146.906
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 454.223 ; gain = 146.906
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k160tffg676-2L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.runs/synth_1/.Xil/Vivado-35380-LAPTOP-GIMOV2AL/dcp1/SCPU_ctrl_Int_0_in_context.xdc] for cell 'U1'
+Finished Parsing XDC File [C:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.runs/synth_1/.Xil/Vivado-35380-LAPTOP-GIMOV2AL/dcp1/SCPU_ctrl_Int_0_in_context.xdc] for cell 'U1'
+Parsing XDC File [C:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 811.348 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 811.348 ; gain = 504.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k160tffg676-2L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 811.348 ; gain = 504.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U2/inst/U1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U2/inst/U10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U2/inst/U11. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U2/inst/U2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U2/inst/U3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U2/inst/U4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U2/inst/U5. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U2/inst/U6. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U2/inst/U7. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U2/inst/U8. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U2/inst/U9. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 811.348 ; gain = 504.031
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "register_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.srcs/sources_1/ip/DataPath_more_0/ip/ALU_0_1/sources_1/new/ALU.v:29]
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-327] inferring latch for variable 'res_reg' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.srcs/sources_1/ip/DataPath_more_0/ip/ALU_0_1/sources_1/new/ALU.v:30]
+WARNING: [Synth 8-327] inferring latch for variable 'mepc_reg' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.srcs/sources_1/ip/DataPath_more_0/ip/RV_Int_0/RV_Int.v:22]
+WARNING: [Synth 8-327] inferring latch for variable 'interr_reg' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.srcs/sources_1/ip/DataPath_more_0/ip/RV_Int_0/RV_Int.v:24]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 811.348 ; gain = 504.031
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 2     
+	  11 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 36    
+	  11 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module add_32 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module MUX2T1_32 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module MUX4T1_32 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module Regs 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 31    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 31    
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	  11 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 1     
+Module REG32 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module RV_Int 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 600 (col length:100)
+BRAMs: 650 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "inst/zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design RV_Int_0 has unconnected port clk
+WARNING: [Synth 8-3331] design ImmGen_0 has unconnected port inst_field[6]
+WARNING: [Synth 8-3331] design ImmGen_0 has unconnected port inst_field[5]
+WARNING: [Synth 8-3331] design ImmGen_0 has unconnected port inst_field[4]
+WARNING: [Synth 8-3331] design ImmGen_0 has unconnected port inst_field[3]
+WARNING: [Synth 8-3331] design ImmGen_0 has unconnected port inst_field[2]
+WARNING: [Synth 8-3331] design ImmGen_0 has unconnected port inst_field[1]
+WARNING: [Synth 8-3331] design ImmGen_0 has unconnected port inst_field[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 811.348 ; gain = 504.031
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 816.707 ; gain = 509.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 817.746 ; gain = 510.430
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 833.105 ; gain = 525.789
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 833.105 ; gain = 525.789
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 833.105 ; gain = 525.789
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 833.105 ; gain = 525.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 833.105 ; gain = 525.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 833.105 ; gain = 525.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 833.105 ; gain = 525.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------+----------+
+|      |BlackBox name   |Instances |
++------+----------------+----------+
+|1     |SCPU_ctrl_Int_0 |         1|
++------+----------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |SCPU_ctrl_Int_0 |     1|
+|2     |BUFG            |     3|
+|3     |CARRY4          |    28|
+|4     |LUT1            |     1|
+|5     |LUT2            |    66|
+|6     |LUT3            |   160|
+|7     |LUT4            |    88|
+|8     |LUT5            |   192|
+|9     |LUT6            |   719|
+|10    |MUXF7           |   258|
+|11    |MUXF8           |     1|
+|12    |FDCE            |  1024|
+|13    |LD              |    32|
+|14    |LDC             |    32|
+|15    |LDCP            |     1|
+|16    |IBUF            |    66|
+|17    |OBUF            |    98|
++------+----------------+------+
+
+Report Instance Areas: 
++------+-------------+----------------+------+
+|      |Instance     |Module          |Cells |
++------+-------------+----------------+------+
+|1     |top          |                |  2789|
+|2     |  U2         |DataPath_more_0 |  2604|
+|3     |    inst     |DataPath_more   |  2604|
+|4     |      U1     |ImmGen_0        |    32|
+|5     |        inst |ImmGen          |    32|
+|6     |      U2     |add_32_0        |    40|
+|7     |        inst |add_32_2        |    40|
+|8     |      U3     |add_32_1        |    40|
+|9     |        inst |add_32          |    40|
+|10    |      U4     |MUX2T1_32_1     |    32|
+|11    |        inst |MUX2T1_32_1__1  |    32|
+|12    |      U5     |MUX4T1_32_0     |    32|
+|13    |        inst |MUX4T1_32_0__1  |    32|
+|14    |      U6     |MUX4T1_32_1     |    32|
+|15    |        inst |MUX4T1_32       |    32|
+|16    |      U7     |MUX2T1_32_0     |    32|
+|17    |        inst |MUX2T1_32       |    32|
+|18    |      U8     |Regs_0          |  1855|
+|19    |        inst |Regs            |  1855|
+|20    |      U9     |ALU_0           |   403|
+|21    |        inst |ALU             |   401|
+|22    |      U10    |REG32_0         |    32|
+|23    |        inst |REG32           |    32|
+|24    |      U11    |RV_Int_0        |    73|
+|25    |        inst |RV_Int          |    72|
++------+-------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 833.105 ; gain = 525.789
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 11 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:28 . Memory (MB): peak = 833.105 ; gain = 168.664
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 833.105 ; gain = 525.789
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 418 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 65 instances were transformed.
+  LD => LDCE: 32 instances
+  LDC => LDCE: 32 instances
+  LDCP => LDCP (GND, LUT3, LUT3, LDCE, VCC): 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+92 Infos, 19 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 843.203 ; gain = 547.375
+INFO: [Common 17-1381] The checkpoint 'C:/Users/lenovo/Desktop/Computer Organization Lab/Lab4/Lab4_final/SCPU/SCPU.runs/synth_1/SCPU.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file SCPU_utilization_synth.rpt -pb SCPU_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.088 . Memory (MB): peak = 843.203 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 15 12:43:54 2022...

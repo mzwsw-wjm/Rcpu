@@ -1,0 +1,249 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Feb  6 11:58:12 2022
+# Process ID: 9508
+# Current directory: C:/Users/lenovo/Desktop/Computer Organization Lab/Lab0/tools/MUX2T1_5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15192 C:\Users\lenovo\Desktop\Computer Organization Lab\Lab0\tools\MUX2T1_5\MUX2T1_5.xpr
+# Log file: C:/Users/lenovo/Desktop/Computer Organization Lab/Lab0/tools/MUX2T1_5/vivado.log
+# Journal file: C:/Users/lenovo/Desktop/Computer Organization Lab/Lab0/tools/MUX2T1_5\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab0/tools/MUX2T1_5/MUX2T1_5.xpr}
+update_compile_order -fileset sources_1
+ipx::package_project -root_dir {c:/users/lenovo/desktop/computer organization lab/lab0/tools/mux2t1_5/mux2t1_5.srcs/sources_1/new} -vendor xilinx.com -library user -taxonomy /UserIP -force
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path {c:/Users/lenovo/Desktop/Computer Organization Lab/Lab0/tools/MUX2T1_5/MUX2T1_5.srcs/sources_1/new}
+set_property core_revision 3 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path {c:/Users/lenovo/Desktop/Computer Organization Lab/Lab0/tools/MUX2T1_5/MUX2T1_5.srcs/sources_1/new}
+close_project
+open_project {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab0/tools/MUX2T1_8/MUX2T1_8.xpr}
+update_compile_order -fileset sources_1
+ipx::package_project -root_dir {c:/users/lenovo/desktop/computer organization lab/lab0/tools/mux2t1_8/mux2t1_8.srcs/sources_1/new} -vendor xilinx.com -library user -taxonomy /UserIP -force
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path {c:/Users/lenovo/Desktop/Computer Organization Lab/Lab0/tools/MUX2T1_8/MUX2T1_8.srcs/sources_1/new}
+close_project
+open_project {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab0/tools/MUX2T1_32/MUX2T1_32.xpr}
+update_compile_order -fileset sources_1
+ipx::package_project -root_dir {c:/users/lenovo/desktop/computer organization lab/lab0/tools/mux2t1_32/mux2t1_32.srcs/sources_1/new} -vendor xilinx.com -library user -taxonomy /UserIP -force
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path {c:/Users/lenovo/Desktop/Computer Organization Lab/Lab0/tools/MUX2T1_32/MUX2T1_32.srcs/sources_1/new}
+close_project
+open_project {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab0/tools/MUX2T1_64/MUX2T1_64.xpr}
+update_compile_order -fileset sources_1
+ipx::package_project -root_dir {c:/users/lenovo/desktop/computer organization lab/lab0/tools/mux2t1_64/mux2t1_64.srcs/sources_1/new} -vendor xilinx.com -library user -taxonomy /UserIP -force
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path {c:/Users/lenovo/Desktop/Computer Organization Lab/Lab0/tools/MUX2T1_64/MUX2T1_64.srcs/sources_1/new}
+close_project
+open_project {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab0/tools/MUX4T1_5/MUX4T1_5.xpr}
+update_compile_order -fileset sources_1
+ipx::package_project -root_dir {c:/users/lenovo/desktop/computer organization lab/lab0/tools/mux4t1_5/mux4t1_5.srcs/sources_1/new} -vendor xilinx.com -library user -taxonomy /UserIP -force
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path {c:/Users/lenovo/Desktop/Computer Organization Lab/Lab0/tools/MUX4T1_5/MUX4T1_5.srcs/sources_1/new}
+close_project
+open_project {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab0/tools/MUX4T1_32/MUX4T1_32.xpr}
+update_compile_order -fileset sources_1
+ipx::package_project -root_dir {c:/users/lenovo/desktop/computer organization lab/lab0/tools/mux4t1_32/mux4t1_32.srcs/sources_1/new} -vendor xilinx.com -library user -taxonomy /UserIP -force
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path {c:/Users/lenovo/Desktop/Computer Organization Lab/Lab0/tools/MUX4T1_32/MUX4T1_32.srcs/sources_1/new}
+close_project
+open_project {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab0/tools/MUX8T1_8/MUX8T1_8.xpr}
+update_compile_order -fileset sources_1
+ipx::package_project -root_dir {c:/users/lenovo/desktop/computer organization lab/lab0/tools/mux8t1_8/mux8t1_8.srcs/sources_1/new} -vendor xilinx.com -library user -taxonomy /UserIP -force
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path {c:/Users/lenovo/Desktop/Computer Organization Lab/Lab0/tools/MUX8T1_8/MUX8T1_8.srcs/sources_1/new}
+close_project
+open_project {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab0/tools/MUX8T1_32/MUX8T1_32.xpr}
+update_compile_order -fileset sources_1
+ipx::package_project -root_dir {c:/users/lenovo/desktop/computer organization lab/lab0/tools/mux8t1_32/mux8t1_32.srcs/sources_1/new} -vendor xilinx.com -library user -taxonomy /UserIP -force
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path {c:/Users/lenovo/Desktop/Computer Organization Lab/Lab0/tools/MUX8T1_32/MUX8T1_32.srcs/sources_1/new}
+close_project
+open_project {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab0/tools/or_bit_32/or_bit_32.xpr}
+update_compile_order -fileset sources_1
+ipx::package_project -root_dir {c:/users/lenovo/desktop/computer organization lab/lab0/tools/or_bit_32/or_bit_32.srcs/sources_1/new} -vendor xilinx.com -library user -taxonomy /UserIP -force
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path {c:/Users/lenovo/Desktop/Computer Organization Lab/Lab0/tools/or_bit_32/or_bit_32.srcs/sources_1/new}
+close_project
+create_project OExp01_muxctrl {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab0/OExp01_muxctrl} -part xc7k160tffg676-2L
+set_property  ip_repo_paths  {{C:/Users/lenovo/Desktop/Computer Organization Lab/Lab0/tools/IP}} [current_project]
+update_ip_catalog
+create_bd_design "OExp01_muxctrl"
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:MUX2T1_5:1.0 MUX2T1_5_0
+endgroup
+copy_bd_objs /  [get_bd_cells {MUX2T1_5_0}]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:MUX8T1_8:1.0 MUX8T1_8_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:MUX4T1_5:1.0 MUX4T1_5_0
+endgroup
+set_property location {0.5 -43 -358} [get_bd_cells MUX4T1_5_0]
+set_property location {1 -7 -99} [get_bd_cells MUX2T1_5_1]
+set_property location {3 543 -222} [get_bd_cells MUX4T1_5_0]
+set_property location {1 -11 -353} [get_bd_cells MUX2T1_5_0]
+set_property location {2.5 355 -338} [get_bd_cells MUX8T1_8_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_1
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_2
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_3
+endgroup
+set_property -dict [list CONFIG.CONST_WIDTH {5} CONFIG.CONST_VAL {0}] [get_bd_cells xlconstant_0]
+set_property -dict [list CONFIG.CONST_WIDTH {5}] [get_bd_cells xlconstant_1]
+set_property -dict [list CONFIG.CONST_WIDTH {8}] [get_bd_cells xlconstant_2]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 xlconcat_0
+endgroup
+copy_bd_objs /  [get_bd_cells {xlconcat_0}]
+set_property -dict [list CONFIG.IN1_WIDTH.VALUE_SRC USER CONFIG.IN0_WIDTH.VALUE_SRC USER] [get_bd_cells xlconcat_0]
+set_property -dict [list CONFIG.IN0_WIDTH {4} CONFIG.IN1_WIDTH {4}] [get_bd_cells xlconcat_0]
+set_property -dict [list CONFIG.IN1_WIDTH.VALUE_SRC USER CONFIG.IN0_WIDTH.VALUE_SRC USER] [get_bd_cells xlconcat_1]
+set_property -dict [list CONFIG.IN0_WIDTH {4} CONFIG.IN1_WIDTH {4}] [get_bd_cells xlconcat_1]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_0
+endgroup
+set_property -dict [list CONFIG.DIN_FROM {4} CONFIG.DIN_WIDTH {5} CONFIG.DOUT_WIDTH {4} CONFIG.DIN_TO {0}] [get_bd_cells xlslice_0]
+set_property -dict [list CONFIG.DOUT_WIDTH {4}] [get_bd_cells xlslice_0]
+set_property -dict [list CONFIG.DIN_FROM {3} CONFIG.DOUT_WIDTH {4}] [get_bd_cells xlslice_0]
+copy_bd_objs /  [get_bd_cells {xlslice_0}]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_2
+endgroup
+set_property -dict [list CONFIG.DIN_FROM {4} CONFIG.DIN_WIDTH {8} CONFIG.DIN_TO {0} CONFIG.DOUT_WIDTH {5}] [get_bd_cells xlslice_2]
+copy_bd_objs /  [get_bd_cells {xlslice_2}]
+set_property location {1 -15 -470} [get_bd_cells xlslice_3]
+set_property location {2 179 -379} [get_bd_cells MUX2T1_5_0]
+set_property location {2 220 -276} [get_bd_cells MUX2T1_5_1]
+set_property location {4.5 626 -434} [get_bd_cells xlconcat_1]
+set_property location {3 261 -420} [get_bd_cells xlslice_0]
+set_property location {3 249 -312} [get_bd_cells xlslice_1]
+set_property location {2 85 -554} [get_bd_cells MUX2T1_5_0]
+set_property location {2 83 -373} [get_bd_cells MUX2T1_5_1]
+set_property location {5 618 -552} [get_bd_cells xlconcat_0]
+set_property location {3 304 -561} [get_bd_cells xlslice_0]
+set_property location {3 300 -393} [get_bd_cells xlslice_1]
+set_property location {2 144 -408} [get_bd_cells xlconstant_3]
+set_property location {1 -70 -327} [get_bd_cells xlconstant_3]
+set_property location {2 81 -369} [get_bd_cells MUX2T1_5_1]
+connect_bd_net [get_bd_pins xlconstant_3/dout] [get_bd_pins MUX2T1_5_1/s]
+connect_bd_net [get_bd_pins MUX2T1_5_0/o] [get_bd_pins xlslice_0/Din]
+connect_bd_net [get_bd_pins MUX2T1_5_1/o] [get_bd_pins xlslice_1/Din]
+set_property location {3 263 -234} [get_bd_cells xlslice_2]
+set_property location {4 589 -236} [get_bd_cells xlslice_3]
+startgroup
+make_bd_pins_external  [get_bd_pins MUX2T1_5_0/s]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins MUX2T1_5_0/I0]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins MUX2T1_5_0/I1]
+endgroup
+startgroup
+connect_bd_net [get_bd_ports I0_0] [get_bd_pins MUX2T1_5_1/I0]
+endgroup
+connect_bd_net [get_bd_ports I1_0] [get_bd_pins MUX2T1_5_1/I1]
+set_property name I0 [get_bd_ports I0_0]
+set_property name I1 [get_bd_ports I1_0]
+set_property location {3.5 474 -607} [get_bd_cells xlconcat_0]
+set_property location {4 432 -369} [get_bd_cells xlconcat_1]
+set_property location {4 469 -566} [get_bd_cells xlconcat_0]
+connect_bd_net [get_bd_pins xlslice_0/Dout] [get_bd_pins xlconcat_0/In1]
+connect_bd_net [get_bd_pins xlslice_0/Dout] [get_bd_pins xlconcat_1/In0]
+connect_bd_net [get_bd_pins xlslice_1/Dout] [get_bd_pins xlconcat_1/In1]
+connect_bd_net [get_bd_pins xlslice_1/Dout] [get_bd_pins xlconcat_0/In0]
+set_property location {5 710 -574} [get_bd_cells MUX8T1_8_0]
+startgroup
+make_bd_pins_external  [get_bd_pins MUX8T1_8_0/s]
+endgroup
+set_property name s1 [get_bd_ports s_0]
+set_property name s2 [get_bd_ports s_1]
+connect_bd_net [get_bd_pins MUX8T1_8_0/I0] [get_bd_pins xlconcat_0/dout]
+connect_bd_net [get_bd_pins MUX8T1_8_0/I1] [get_bd_pins xlconcat_1/dout]
+set_property location {4 481 -275} [get_bd_cells xlconstant_2]
+connect_bd_net [get_bd_pins MUX8T1_8_0/I2] [get_bd_pins xlconstant_2/dout]
+connect_bd_net [get_bd_pins MUX8T1_8_0/I3] [get_bd_pins xlconstant_2/dout]
+connect_bd_net [get_bd_pins MUX8T1_8_0/I4] [get_bd_pins xlconstant_2/dout]
+connect_bd_net [get_bd_pins MUX8T1_8_0/I5] [get_bd_pins xlconstant_2/dout]
+connect_bd_net [get_bd_pins MUX8T1_8_0/I6] [get_bd_pins xlconstant_2/dout]
+connect_bd_net [get_bd_pins MUX8T1_8_0/I7] [get_bd_pins xlconstant_2/dout]
+set_property location {5 716 -374} [get_bd_cells xlslice_3]
+connect_bd_net [get_bd_pins xlconcat_1/dout] [get_bd_pins xlslice_3/Din]
+set_property location {5.5 870 -569} [get_bd_cells xlslice_2]
+connect_bd_net [get_bd_pins MUX8T1_8_0/o] [get_bd_pins xlslice_2/Din]
+set_property location {6 920 -375} [get_bd_cells MUX4T1_5_0]
+startgroup
+make_bd_pins_external  [get_bd_pins MUX4T1_5_0/s]
+endgroup
+set_property name s [get_bd_ports s_0]
+connect_bd_net [get_bd_pins xlslice_2/Dout] [get_bd_pins MUX4T1_5_0/I0]
+connect_bd_net [get_bd_pins xlslice_3/Dout] [get_bd_pins MUX4T1_5_0/I1]
+set_property location {5 701 -305} [get_bd_cells xlconstant_1]
+connect_bd_net [get_bd_pins MUX4T1_5_0/I2] [get_bd_pins xlconstant_1/dout]
+set_property location {5 619 -229} [get_bd_cells xlconstant_0]
+connect_bd_net [get_bd_pins MUX4T1_5_0/I3] [get_bd_pins xlconstant_0/dout]
+startgroup
+make_bd_pins_external  [get_bd_pins MUX4T1_5_0/o]
+endgroup
+save_bd_design
+regenerate_bd_layout
+validate_bd_design
+set_property synth_checkpoint_mode None [get_files  {{C:/Users/lenovo/Desktop/Computer Organization Lab/Lab0/OExp01_muxctrl/OExp01_muxctrl.srcs/sources_1/bd/OExp01_muxctrl/OExp01_muxctrl.bd}}]
+generate_target all [get_files  {{C:/Users/lenovo/Desktop/Computer Organization Lab/Lab0/OExp01_muxctrl/OExp01_muxctrl.srcs/sources_1/bd/OExp01_muxctrl/OExp01_muxctrl.bd}}]
+export_ip_user_files -of_objects [get_files {{C:/Users/lenovo/Desktop/Computer Organization Lab/Lab0/OExp01_muxctrl/OExp01_muxctrl.srcs/sources_1/bd/OExp01_muxctrl/OExp01_muxctrl.bd}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{C:/Users/lenovo/Desktop/Computer Organization Lab/Lab0/OExp01_muxctrl/OExp01_muxctrl.srcs/sources_1/bd/OExp01_muxctrl/OExp01_muxctrl.bd}}] -directory {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab0/OExp01_muxctrl/OExp01_muxctrl.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab0/OExp01_muxctrl/OExp01_muxctrl.ip_user_files} -ipstatic_source_dir {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab0/OExp01_muxctrl/OExp01_muxctrl.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab0/OExp01_muxctrl/OExp01_muxctrl.cache/compile_simlib/modelsim} {questa=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab0/OExp01_muxctrl/OExp01_muxctrl.cache/compile_simlib/questa} {riviera=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab0/OExp01_muxctrl/OExp01_muxctrl.cache/compile_simlib/riviera} {activehdl=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab0/OExp01_muxctrl/OExp01_muxctrl.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files {{C:/Users/lenovo/Desktop/Computer Organization Lab/Lab0/OExp01_muxctrl/OExp01_muxctrl.srcs/sources_1/bd/OExp01_muxctrl/OExp01_muxctrl.bd}}] -top
+add_files -norecurse {{C:/Users/lenovo/Desktop/Computer Organization Lab/Lab0/OExp01_muxctrl/OExp01_muxctrl.srcs/sources_1/bd/OExp01_muxctrl/hdl/OExp01_muxctrl_wrapper.v}}
+file mkdir C:/Users/lenovo/Desktop/Computer Organization Lab/Lab0/OExp01_muxctrl/OExp01_muxctrl.srcs/constrs_1
+file mkdir C:/Users/lenovo/Desktop/Computer Organization Lab/Lab0/OExp01_muxctrl/OExp01_muxctrl.srcs/constrs_1
+file mkdir C:/Users/lenovo/Desktop/Computer Organization Lab/Lab0/OExp01_muxctrl/OExp01_muxctrl.srcs/constrs_1/new
+file mkdir C:/Users/lenovo/Desktop/Computer Organization Lab/Lab0/OExp01_muxctrl/OExp01_muxctrl.srcs/constrs_1/new
+file mkdir C:/Users/lenovo/Desktop/Computer Organization Lab/Lab0/OExp01_muxctrl/OExp01_muxctrl.srcs/constrs_1/new
+file mkdir C:/Users/lenovo/Desktop/Computer Organization Lab/Lab0/OExp01_muxctrl/OExp01_muxctrl.srcs/constrs_1/new
+file mkdir C:/Users/lenovo/Desktop/Computer Organization Lab/Lab0/OExp01_muxctrl/OExp01_muxctrl.srcs/constrs_1
+file mkdir {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab0/OExp01_muxctrl/OExp01_muxctrl.srcs/constrs_1/new}
+close [ open {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab0/OExp01_muxctrl/OExp01_muxctrl.srcs/constrs_1/new/muxctrl.xdc} w ]
+add_files -fileset constrs_1 {{C:/Users/lenovo/Desktop/Computer Organization Lab/Lab0/OExp01_muxctrl/OExp01_muxctrl.srcs/constrs_1/new/muxctrl.xdc}}
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
