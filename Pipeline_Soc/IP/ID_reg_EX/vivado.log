@@ -1,0 +1,227 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri May 13 14:23:00 2022
+# Process ID: 23540
+# Current directory: C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/ID_reg_EX
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19372 C:\Users\lenovo\Desktop\Computer Organization Lab\Lab5\IP\ID_reg_EX\ID_reg_EX.xpr
+# Log file: C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/ID_reg_EX/vivado.log
+# Journal file: C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/ID_reg_EX\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/ID_reg_EX/ID_reg_EX.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/ID_reg_EX/ID_reg_EX.srcs/sources_1/new'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado2017/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 846.527 ; gain = 133.684
+update_compile_order -fileset sources_1
+close_project
+create_project Pipeline_EX {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX} -part xc7k160tffg676-2L
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado2017/Vivado/2017.4/data/ip'.
+file mkdir C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX/Pipeline_EX.srcs/sources_1/new
+can't create directory "C:/Users/lenovo/Desktop/Computer": file already exists
+file mkdir C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX/Pipeline_EX.srcs/sources_1/new
+can't create directory "C:/Users/lenovo/Desktop/Computer": file already exists
+file mkdir C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX/Pipeline_EX.srcs/sources_1/new
+can't create directory "C:/Users/lenovo/Desktop/Computer": file already exists
+file mkdir {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX/Pipeline_EX.srcs/sources_1/new}
+close [ open {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX/Pipeline_EX.srcs/sources_1/new/Pipeline_EX.v} w ]
+add_files {{C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX/Pipeline_EX.srcs/sources_1/new/Pipeline_EX.v}}
+update_compile_order -fileset sources_1
+set_property  ip_repo_paths  {{C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP}} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX'.)
+create_ip -name addc_32 -vendor xilinx.com -library user -version 1.0 -module_name addc_32_0 -dir {c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX/Pipeline_EX.srcs/sources_1/ip}
+generate_target {instantiation_template} [get_files {{c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX/Pipeline_EX.srcs/sources_1/ip/addc_32_0/addc_32_0.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'addc_32_0'...
+update_compile_order -fileset sources_1
+set_property generate_synth_checkpoint false [get_files  {{c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX/Pipeline_EX.srcs/sources_1/ip/addc_32_0/addc_32_0.xci}}]
+generate_target all [get_files  {{c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX/Pipeline_EX.srcs/sources_1/ip/addc_32_0/addc_32_0.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'addc_32_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'addc_32_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'addc_32_0'...
+export_ip_user_files -of_objects [get_files {{c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX/Pipeline_EX.srcs/sources_1/ip/addc_32_0/addc_32_0.xci}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX/Pipeline_EX.srcs/sources_1/ip/addc_32_0/addc_32_0.xci}}] -directory {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX/Pipeline_EX.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX/Pipeline_EX.ip_user_files} -ipstatic_source_dir {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX/Pipeline_EX.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX/Pipeline_EX.cache/compile_simlib/modelsim} {questa=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX/Pipeline_EX.cache/compile_simlib/questa} {riviera=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX/Pipeline_EX.cache/compile_simlib/riviera} {activehdl=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX/Pipeline_EX.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name addc_32 -vendor xilinx.com -library user -version 1.0 -module_name addc_32_1 -dir {c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX/Pipeline_EX.srcs/sources_1/ip}
+generate_target {instantiation_template} [get_files {{c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX/Pipeline_EX.srcs/sources_1/ip/addc_32_1/addc_32_1.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'addc_32_1'...
+update_compile_order -fileset sources_1
+set_property generate_synth_checkpoint false [get_files  {{c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX/Pipeline_EX.srcs/sources_1/ip/addc_32_1/addc_32_1.xci}}]
+generate_target all [get_files  {{c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX/Pipeline_EX.srcs/sources_1/ip/addc_32_1/addc_32_1.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'addc_32_1'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'addc_32_1'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'addc_32_1'...
+export_ip_user_files -of_objects [get_files {{c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX/Pipeline_EX.srcs/sources_1/ip/addc_32_1/addc_32_1.xci}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX/Pipeline_EX.srcs/sources_1/ip/addc_32_1/addc_32_1.xci}}] -directory {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX/Pipeline_EX.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX/Pipeline_EX.ip_user_files} -ipstatic_source_dir {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX/Pipeline_EX.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX/Pipeline_EX.cache/compile_simlib/modelsim} {questa=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX/Pipeline_EX.cache/compile_simlib/questa} {riviera=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX/Pipeline_EX.cache/compile_simlib/riviera} {activehdl=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX/Pipeline_EX.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name ALU -vendor xilinx.com -library user -version 1.0 -module_name ALU_0 -dir {c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX/Pipeline_EX.srcs/sources_1/ip}
+generate_target {instantiation_template} [get_files {{c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX/Pipeline_EX.srcs/sources_1/ip/ALU_0/ALU_0.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ALU_0'...
+update_compile_order -fileset sources_1
+set_property generate_synth_checkpoint false [get_files  {{c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX/Pipeline_EX.srcs/sources_1/ip/ALU_0/ALU_0.xci}}]
+generate_target all [get_files  {{c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX/Pipeline_EX.srcs/sources_1/ip/ALU_0/ALU_0.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ALU_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ALU_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ALU_0'...
+export_ip_user_files -of_objects [get_files {{c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX/Pipeline_EX.srcs/sources_1/ip/ALU_0/ALU_0.xci}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX/Pipeline_EX.srcs/sources_1/ip/ALU_0/ALU_0.xci}}] -directory {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX/Pipeline_EX.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX/Pipeline_EX.ip_user_files} -ipstatic_source_dir {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX/Pipeline_EX.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX/Pipeline_EX.cache/compile_simlib/modelsim} {questa=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX/Pipeline_EX.cache/compile_simlib/questa} {riviera=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX/Pipeline_EX.cache/compile_simlib/riviera} {activehdl=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX/Pipeline_EX.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name MUX2T1_32 -vendor xilinx.com -library user -version 1.0 -module_name MUX2T1_32_0 -dir {c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX/Pipeline_EX.srcs/sources_1/ip}
+generate_target {instantiation_template} [get_files {{c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX/Pipeline_EX.srcs/sources_1/ip/MUX2T1_32_0/MUX2T1_32_0.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'MUX2T1_32_0'...
+update_compile_order -fileset sources_1
+set_property generate_synth_checkpoint false [get_files  {{c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX/Pipeline_EX.srcs/sources_1/ip/MUX2T1_32_0/MUX2T1_32_0.xci}}]
+generate_target all [get_files  {{c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX/Pipeline_EX.srcs/sources_1/ip/MUX2T1_32_0/MUX2T1_32_0.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'MUX2T1_32_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'MUX2T1_32_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'MUX2T1_32_0'...
+export_ip_user_files -of_objects [get_files {{c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX/Pipeline_EX.srcs/sources_1/ip/MUX2T1_32_0/MUX2T1_32_0.xci}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX/Pipeline_EX.srcs/sources_1/ip/MUX2T1_32_0/MUX2T1_32_0.xci}}] -directory {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX/Pipeline_EX.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX/Pipeline_EX.ip_user_files} -ipstatic_source_dir {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX/Pipeline_EX.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX/Pipeline_EX.cache/compile_simlib/modelsim} {questa=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX/Pipeline_EX.cache/compile_simlib/questa} {riviera=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX/Pipeline_EX.cache/compile_simlib/riviera} {activehdl=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_EX/Pipeline_EX.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+ipx::package_project -root_dir {c:/users/lenovo/desktop/computer organization lab/lab5/ip/pipeline_ex/pipeline_ex.srcs/sources_1} -vendor xilinx.com -library user -taxonomy /UserIP
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path {c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP}
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP'
+close_project
+create_project EX_reg_MEM {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/EX_reg_MEM} -part xc7k160tffg676-2L
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado2017/Vivado/2017.4/data/ip'.
+file mkdir C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/EX_reg_MEM/EX_reg_MEM.srcs/sources_1/new
+can't create directory "C:/Users/lenovo/Desktop/Computer": file already exists
+file mkdir C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/EX_reg_MEM/EX_reg_MEM.srcs/sources_1/new
+can't create directory "C:/Users/lenovo/Desktop/Computer": file already exists
+file mkdir C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/EX_reg_MEM/EX_reg_MEM.srcs/sources_1/new
+can't create directory "C:/Users/lenovo/Desktop/Computer": file already exists
+file mkdir {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/EX_reg_MEM/EX_reg_MEM.srcs/sources_1/new}
+close [ open {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/EX_reg_MEM/EX_reg_MEM.srcs/sources_1/new/EX_reg_MEM.v} w ]
+add_files {{C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/EX_reg_MEM/EX_reg_MEM.srcs/sources_1/new/EX_reg_MEM.v}}
+update_compile_order -fileset sources_1
+ipx::package_project -root_dir {c:/users/lenovo/desktop/computer organization lab/lab5/ip/ex_reg_mem/ex_reg_mem.srcs/sources_1/new} -vendor xilinx.com -library user -taxonomy /UserIP
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property  ip_repo_paths  {{c:/users/lenovo/desktop/computer organization lab/lab5/ip/ex_reg_mem/ex_reg_mem.srcs/sources_1/new}} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/users/lenovo/desktop/computer organization lab/lab5/ip/ex_reg_mem/ex_reg_mem.srcs/sources_1/new'.
+close_project
+create_project Pipeline_Mem {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_Mem} -part xc7k160tffg676-2L
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado2017/Vivado/2017.4/data/ip'.
+file mkdir C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_Mem/Pipeline_Mem.srcs/sources_1/new
+can't create directory "C:/Users/lenovo/Desktop/Computer": file already exists
+file mkdir C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_Mem/Pipeline_Mem.srcs/sources_1/new
+can't create directory "C:/Users/lenovo/Desktop/Computer": file already exists
+file mkdir C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_Mem/Pipeline_Mem.srcs/sources_1/new
+can't create directory "C:/Users/lenovo/Desktop/Computer": file already exists
+file mkdir {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_Mem/Pipeline_Mem.srcs/sources_1/new}
+close [ open {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_Mem/Pipeline_Mem.srcs/sources_1/new/Pipeline_Mem.v} w ]
+add_files {{C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_Mem/Pipeline_Mem.srcs/sources_1/new/Pipeline_Mem.v}}
+update_compile_order -fileset sources_1
+ipx::package_project -root_dir {c:/users/lenovo/desktop/computer organization lab/lab5/ip/pipeline_mem/pipeline_mem.srcs/sources_1/new} -vendor xilinx.com -library user -taxonomy /UserIP
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property  ip_repo_paths  {{c:/users/lenovo/desktop/computer organization lab/lab5/ip/pipeline_mem/pipeline_mem.srcs/sources_1/new}} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/users/lenovo/desktop/computer organization lab/lab5/ip/pipeline_mem/pipeline_mem.srcs/sources_1/new'.
+close_project
+create_project Mem_reg_WB {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Mem_reg_WB} -part xc7k160tffg676-2L
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado2017/Vivado/2017.4/data/ip'.
+file mkdir C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Mem_reg_WB/Mem_reg_WB.srcs/sources_1/new
+can't create directory "C:/Users/lenovo/Desktop/Computer": file already exists
+file mkdir C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Mem_reg_WB/Mem_reg_WB.srcs/sources_1/new
+can't create directory "C:/Users/lenovo/Desktop/Computer": file already exists
+file mkdir C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Mem_reg_WB/Mem_reg_WB.srcs/sources_1/new
+can't create directory "C:/Users/lenovo/Desktop/Computer": file already exists
+file mkdir {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Mem_reg_WB/Mem_reg_WB.srcs/sources_1/new}
+close [ open {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Mem_reg_WB/Mem_reg_WB.srcs/sources_1/new/Mem_reg_WB.v} w ]
+add_files {{C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Mem_reg_WB/Mem_reg_WB.srcs/sources_1/new/Mem_reg_WB.v}}
+update_compile_order -fileset sources_1
+ipx::package_project -root_dir {c:/users/lenovo/desktop/computer organization lab/lab5/ip/mem_reg_wb/mem_reg_wb.srcs/sources_1/new} -vendor xilinx.com -library user -taxonomy /UserIP
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property  ip_repo_paths  {{c:/users/lenovo/desktop/computer organization lab/lab5/ip/mem_reg_wb/mem_reg_wb.srcs/sources_1/new}} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/users/lenovo/desktop/computer organization lab/lab5/ip/mem_reg_wb/mem_reg_wb.srcs/sources_1/new'.
+close_project
+create_project Pipeline_WB {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_WB} -part xc7k160tffg676-2L
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado2017/Vivado/2017.4/data/ip'.
+file mkdir C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_WB/Pipeline_WB.srcs/sources_1/new
+can't create directory "C:/Users/lenovo/Desktop/Computer": file already exists
+file mkdir C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_WB/Pipeline_WB.srcs/sources_1/new
+can't create directory "C:/Users/lenovo/Desktop/Computer": file already exists
+file mkdir C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_WB/Pipeline_WB.srcs/sources_1/new
+can't create directory "C:/Users/lenovo/Desktop/Computer": file already exists
+file mkdir {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_WB/Pipeline_WB.srcs/sources_1/new}
+close [ open {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_WB/Pipeline_WB.srcs/sources_1/new/Pipeline_WB.v} w ]
+add_files {{C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_WB/Pipeline_WB.srcs/sources_1/new/Pipeline_WB.v}}
+update_compile_order -fileset sources_1
+set_property  ip_repo_paths  {{C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP}} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_WB'.)
+create_ip -name MUX4T1_32 -vendor xilinx.com -library user -version 1.0 -module_name MUX4T1_32_0 -dir {c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_WB/Pipeline_WB.srcs/sources_1/ip}
+generate_target {instantiation_template} [get_files {{c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_WB/Pipeline_WB.srcs/sources_1/ip/MUX4T1_32_0/MUX4T1_32_0.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'MUX4T1_32_0'...
+update_compile_order -fileset sources_1
+set_property generate_synth_checkpoint false [get_files  {{c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_WB/Pipeline_WB.srcs/sources_1/ip/MUX4T1_32_0/MUX4T1_32_0.xci}}]
+generate_target all [get_files  {{c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_WB/Pipeline_WB.srcs/sources_1/ip/MUX4T1_32_0/MUX4T1_32_0.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'MUX4T1_32_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'MUX4T1_32_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'MUX4T1_32_0'...
+export_ip_user_files -of_objects [get_files {{c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_WB/Pipeline_WB.srcs/sources_1/ip/MUX4T1_32_0/MUX4T1_32_0.xci}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_WB/Pipeline_WB.srcs/sources_1/ip/MUX4T1_32_0/MUX4T1_32_0.xci}}] -directory {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_WB/Pipeline_WB.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_WB/Pipeline_WB.ip_user_files} -ipstatic_source_dir {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_WB/Pipeline_WB.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_WB/Pipeline_WB.cache/compile_simlib/modelsim} {questa=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_WB/Pipeline_WB.cache/compile_simlib/questa} {riviera=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_WB/Pipeline_WB.cache/compile_simlib/riviera} {activehdl=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_WB/Pipeline_WB.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+ipx::package_project -root_dir {c:/users/lenovo/desktop/computer organization lab/lab5/ip/pipeline_wb/pipeline_wb.srcs/sources_1} -vendor xilinx.com -library user -taxonomy /UserIP
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path {c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP}
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP'
+close_project
+create_project stall {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/stall} -part xc7k160tffg676-2L
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado2017/Vivado/2017.4/data/ip'.
+file mkdir C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/stall/stall.srcs/sources_1/new
+can't create directory "C:/Users/lenovo/Desktop/Computer": file already exists
+file mkdir C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/stall/stall.srcs/sources_1/new
+can't create directory "C:/Users/lenovo/Desktop/Computer": file already exists
+file mkdir C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/stall/stall.srcs/sources_1/new
+can't create directory "C:/Users/lenovo/Desktop/Computer": file already exists
+file mkdir {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/stall/stall.srcs/sources_1/new}
+close [ open {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/stall/stall.srcs/sources_1/new/stall.v} w ]
+add_files {{C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/stall/stall.srcs/sources_1/new/stall.v}}
+update_compile_order -fileset sources_1
+ipx::package_project -root_dir {c:/users/lenovo/desktop/computer organization lab/lab5/ip/stall/stall.srcs/sources_1/new} -vendor xilinx.com -library user -taxonomy /UserIP
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property  ip_repo_paths  {{c:/users/lenovo/desktop/computer organization lab/lab5/ip/stall/stall.srcs/sources_1/new}} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/users/lenovo/desktop/computer organization lab/lab5/ip/stall/stall.srcs/sources_1/new'.

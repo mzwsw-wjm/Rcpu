@@ -1,0 +1,262 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu May 19 13:59:30 2022
+# Process ID: 22200
+# Current directory: C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent25376 C:\Users\lenovo\Desktop\Computer Organization Lab\Lab5\Pipeline_Soc\SOC\SOC.xpr
+# Log file: C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/vivado.log
+# Journal file: C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.xpr}
+update_compile_order -fileset sources_1
+close_project
+open_project {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/stall/stall.xpr}
+update_compile_order -fileset sources_1
+close_project
+open_project {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/VGA/VGA.xpr}
+update_compile_order -fileset sources_1
+ipx::package_project -root_dir {c:/users/lenovo/desktop/computer organization lab/lab5/ip/vga/vga.srcs/sources_1} -vendor xilinx.com -library user -taxonomy /UserIP -force
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path {c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/VGA/VGA.srcs/sources_1}
+set_property core_revision 3 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path {c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/VGA/VGA.srcs/sources_1}
+close_project
+open_project {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.xpr}
+update_compile_order -fileset sources_1
+upgrade_ip -vlnv xilinx.com:user:VGA:1.0 [get_ips  VGA_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips VGA_0] -no_script -sync -force -quiet
+generate_target all [get_files  {{C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/VGA_0.xci}}]
+export_ip_user_files -of_objects [get_files {{C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/VGA_0.xci}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/VGA_0.xci}}] -directory {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.ip_user_files} -ipstatic_source_dir {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.cache/compile_simlib/modelsim} {questa=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.cache/compile_simlib/questa} {riviera=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.cache/compile_simlib/riviera} {activehdl=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.runs/impl_1/CSSTE.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.runs/impl_1/CSSTE.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+close_hw
+close_project
+open_project {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/VGA/VGA.xpr}
+update_compile_order -fileset sources_1
+ipx::package_project -root_dir {c:/users/lenovo/desktop/computer organization lab/lab5/ip/vga/vga.srcs/sources_1} -vendor xilinx.com -library user -taxonomy /UserIP -force
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path {c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/VGA/VGA.srcs/sources_1}
+close_project
+open_project {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_CPU/Pipeline_CPU.xpr}
+update_compile_order -fileset sources_1
+close_project
+open_project {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.xpr}
+update_compile_order -fileset sources_1
+upgrade_ip -vlnv xilinx.com:user:VGA:1.0 [get_ips  VGA_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips VGA_0] -no_script -sync -force -quiet
+generate_target all [get_files  {{C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/VGA_0.xci}}]
+export_ip_user_files -of_objects [get_files {{C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/VGA_0.xci}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/VGA_0.xci}}] -directory {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.ip_user_files} -ipstatic_source_dir {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.cache/compile_simlib/modelsim} {questa=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.cache/compile_simlib/questa} {riviera=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.cache/compile_simlib/riviera} {activehdl=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+open_project {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_IF/Pipeline_IF.xpr}
+close_project
+open_project {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/PC/PC.xpr}
+update_compile_order -fileset sources_1
+ipx::package_project -root_dir {c:/users/lenovo/desktop/computer organization lab/lab5/ip/pc/pc.srcs/sources_1/new} -vendor xilinx.com -library user -taxonomy /UserIP -force
+ipx::add_bus_parameter POLARITY [ipx::get_bus_interfaces rst -of_objects [ipx::current_core]]
+set_property value ACTIVE_HIGH [ipx::get_bus_parameters POLARITY -of_objects [ipx::get_bus_interfaces rst -of_objects [ipx::current_core]]]
+ipx::add_bus_parameter ASSOCIATED_BUSIF [ipx::get_bus_interfaces clk -of_objects [ipx::current_core]]
+set_property value clk [ipx::get_bus_parameters ASSOCIATED_BUSIF -of_objects [ipx::get_bus_interfaces clk -of_objects [ipx::current_core]]]
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path {c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/PC/PC.srcs/sources_1/new}
+close_project
+open_project {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_IF/Pipeline_IF.xpr}
+update_compile_order -fileset sources_1
+upgrade_ip -vlnv xilinx.com:user:REG32:1.0 [get_ips  REG32_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips REG32_0] -no_script -sync -force -quiet
+generate_target all [get_files  {{C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_IF/Pipeline_IF.srcs/sources_1/ip/REG32_0/REG32_0.xci}}]
+export_ip_user_files -of_objects [get_files {{C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_IF/Pipeline_IF.srcs/sources_1/ip/REG32_0/REG32_0.xci}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_IF/Pipeline_IF.srcs/sources_1/ip/REG32_0/REG32_0.xci}}] -directory {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_IF/Pipeline_IF.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_IF/Pipeline_IF.ip_user_files} -ipstatic_source_dir {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_IF/Pipeline_IF.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_IF/Pipeline_IF.cache/compile_simlib/modelsim} {questa=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_IF/Pipeline_IF.cache/compile_simlib/questa} {riviera=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_IF/Pipeline_IF.cache/compile_simlib/riviera} {activehdl=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_IF/Pipeline_IF.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+ipx::package_project -root_dir {c:/users/lenovo/desktop/computer organization lab/lab5/ip/pipeline_if/pipeline_if.srcs/sources_1} -vendor xilinx.com -library user -taxonomy /UserIP -force
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path {c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP}
+close_project
+open_project {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_CPU/Pipeline_CPU.xpr}
+update_compile_order -fileset sources_1
+ipx::package_project -root_dir {c:/users/lenovo/desktop/computer organization lab/lab5/ip/pipeline_cpu/pipeline_cpu.srcs/sources_1} -vendor xilinx.com -library user -taxonomy /UserIP -force
+ipx::add_bus_parameter POLARITY [ipx::get_bus_interfaces rst -of_objects [ipx::current_core]]
+set_property value ACTIVE_HIGH [ipx::get_bus_parameters POLARITY -of_objects [ipx::get_bus_interfaces rst -of_objects [ipx::current_core]]]
+ipx::add_bus_parameter ASSOCIATED_BUSIF [ipx::get_bus_interfaces clk -of_objects [ipx::current_core]]
+set_property value clk [ipx::get_bus_parameters ASSOCIATED_BUSIF -of_objects [ipx::get_bus_interfaces clk -of_objects [ipx::current_core]]]
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path {c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP}
+close_project
+open_project {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.xpr}
+update_compile_order -fileset sources_1
+upgrade_ip -vlnv xilinx.com:user:Pipeline_CPU:1.0 [get_ips  Pipeline_CPU_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips Pipeline_CPU_0] -no_script -sync -force -quiet
+generate_target all [get_files  {{C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/Pipeline_CPU_0.xci}}]
+export_ip_user_files -of_objects [get_files {{C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/Pipeline_CPU_0.xci}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/Pipeline_CPU_0.xci}}] -directory {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.ip_user_files} -ipstatic_source_dir {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.cache/compile_simlib/modelsim} {questa=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.cache/compile_simlib/questa} {riviera=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.cache/compile_simlib/riviera} {activehdl=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.runs/impl_1/CSSTE.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.runs/impl_1/CSSTE.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+open_project {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/VGA/VGA.xpr}
+current_project SOC
+close_project
+update_compile_order -fileset sources_1
+ipx::package_project -root_dir {c:/users/lenovo/desktop/computer organization lab/lab5/ip/vga/vga.srcs/sources_1} -vendor xilinx.com -library user -taxonomy /UserIP -force
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path {c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/VGA/VGA.srcs/sources_1}
+close_project
+open_project {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.xpr}
+update_compile_order -fileset sources_1
+upgrade_ip -vlnv xilinx.com:user:VGA:1.0 [get_ips  VGA_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips VGA_0] -no_script -sync -force -quiet
+generate_target all [get_files  {{C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/VGA_0.xci}}]
+export_ip_user_files -of_objects [get_files {{C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/VGA_0.xci}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/VGA_0.xci}}] -directory {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.ip_user_files} -ipstatic_source_dir {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.cache/compile_simlib/modelsim} {questa=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.cache/compile_simlib/questa} {riviera=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.cache/compile_simlib/riviera} {activehdl=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.runs/impl_1/CSSTE.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.runs/impl_1/CSSTE.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+open_project {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/IF_reg_ID/IF_reg_ID.xpr}
+current_project SOC
+close_project
+update_compile_order -fileset sources_1
+ipx::package_project -root_dir {c:/users/lenovo/desktop/computer organization lab/lab5/ip/if_reg_id/if_reg_id.srcs/sources_1/new} -vendor xilinx.com -library user -taxonomy /UserIP -force
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path {c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/IF_reg_ID/IF_reg_ID.srcs/sources_1/new}
+close_project
+open_project {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_CPU/Pipeline_CPU.xpr}
+update_compile_order -fileset sources_1
+ipx::package_project -root_dir {c:/users/lenovo/desktop/computer organization lab/lab5/ip/pipeline_cpu/pipeline_cpu.srcs/sources_1} -vendor xilinx.com -library user -taxonomy /UserIP -force
+ipx::add_bus_parameter POLARITY [ipx::get_bus_interfaces rst -of_objects [ipx::current_core]]
+set_property value ACTIVE_HIGH [ipx::get_bus_parameters POLARITY -of_objects [ipx::get_bus_interfaces rst -of_objects [ipx::current_core]]]
+ipx::add_bus_parameter ASSOCIATED_BUSIF [ipx::get_bus_interfaces clk -of_objects [ipx::current_core]]
+set_property value clk [ipx::get_bus_parameters ASSOCIATED_BUSIF -of_objects [ipx::get_bus_interfaces clk -of_objects [ipx::current_core]]]
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path {c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP}
+close_project
+open_project {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.xpr}
+update_compile_order -fileset sources_1
+upgrade_ip -vlnv xilinx.com:user:Pipeline_CPU:1.0 [get_ips  Pipeline_CPU_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips Pipeline_CPU_0] -no_script -sync -force -quiet
+generate_target all [get_files  {{C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/Pipeline_CPU_0.xci}}]
+export_ip_user_files -of_objects [get_files {{C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/Pipeline_CPU_0.xci}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/Pipeline_CPU_0.xci}}] -directory {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.ip_user_files} -ipstatic_source_dir {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.cache/compile_simlib/modelsim} {questa=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.cache/compile_simlib/questa} {riviera=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.cache/compile_simlib/riviera} {activehdl=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.runs/impl_1/CSSTE.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.runs/impl_1/CSSTE.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+close_hw
+close_project
+open_project {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/VGA/VGA.xpr}
+update_compile_order -fileset sources_1
+ipx::package_project -root_dir {c:/users/lenovo/desktop/computer organization lab/lab5/ip/vga/vga.srcs/sources_1} -vendor xilinx.com -library user -taxonomy /UserIP -force
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path {c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/VGA/VGA.srcs/sources_1}
+close_project
+open_project {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.xpr}
+update_compile_order -fileset sources_1
+upgrade_ip -vlnv xilinx.com:user:VGA:1.0 [get_ips  VGA_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips VGA_0] -no_script -sync -force -quiet
+generate_target all [get_files  {{C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/VGA_0.xci}}]
+export_ip_user_files -of_objects [get_files {{C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/VGA_0.xci}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/VGA_0.xci}}] -directory {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.ip_user_files} -ipstatic_source_dir {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.cache/compile_simlib/modelsim} {questa=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.cache/compile_simlib/questa} {riviera=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.cache/compile_simlib/riviera} {activehdl=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.runs/impl_1/CSSTE.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.runs/impl_1/CSSTE.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1

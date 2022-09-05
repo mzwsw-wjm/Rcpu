@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Jun  2 22:26:33 2022
+# Process ID: 63812
+# Current directory: C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_CPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent48604 C:\Users\lenovo\Desktop\Computer Organization Lab\Lab5\IP\Pipeline_CPU\Pipeline_CPU.xpr
+# Log file: C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_CPU/vivado.log
+# Journal file: C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_CPU\vivado.jou
+#-----------------------------------------------------------
+start_guopen_project {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_CPU/Pipeline_CPU.xpr}
+update_compile_order -fileset sources_1
+1
+upgrade_ip -vlnv xilinx.com:user:Pipeline_IF:1.0 [get_ips  Pipeline_IF_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips Pipeline_IF_0] -no_script -sync -force -quiet
+generate_target all [get_files  {{C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/ip/Pipeline_IF_0/Pipeline_IF_0.xci}}]
+export_ip_user_files -of_objects [get_files {{C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/ip/Pipeline_IF_0/Pipeline_IF_0.xci}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/ip/Pipeline_IF_0/Pipeline_IF_0.xci}}] -directory {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_CPU/Pipeline_CPU.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_CPU/Pipeline_CPU.ip_user_files} -ipstatic_source_dir {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_CPU/Pipeline_CPU.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_CPU/Pipeline_CPU.cache/compile_simlib/modelsim} {questa=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_CPU/Pipeline_CPU.cache/compile_simlib/questa} {riviera=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_CPU/Pipeline_CPU.cache/compile_simlib/riviera} {activehdl=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_CPU/Pipeline_CPU.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+upgrade_ip -vlnv xilinx.com:user:IF_reg_ID:1.0 [get_ips  IF_reg_ID_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips IF_reg_ID_0] -no_script -sync -force -quiet
+generate_target all [get_files  {{C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/ip/IF_reg_ID_0/IF_reg_ID_0.xci}}]
+export_ip_user_files -of_objects [get_files {{C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/ip/IF_reg_ID_0/IF_reg_ID_0.xci}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_CPU/Pipeline_CPU.srcs/sources_1/ip/IF_reg_ID_0/IF_reg_ID_0.xci}}] -directory {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_CPU/Pipeline_CPU.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_CPU/Pipeline_CPU.ip_user_files} -ipstatic_source_dir {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_CPU/Pipeline_CPU.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_CPU/Pipeline_CPU.cache/compile_simlib/modelsim} {questa=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_CPU/Pipeline_CPU.cache/compile_simlib/questa} {riviera=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_CPU/Pipeline_CPU.cache/compile_simlib/riviera} {activehdl=C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Pipeline_CPU/Pipeline_CPU.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet

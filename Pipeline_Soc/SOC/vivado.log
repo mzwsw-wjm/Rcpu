@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon Sep  5 22:06:49 2022
+# Process ID: 17848
+# Current directory: C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent40976 C:\Users\lenovo\Desktop\Computer Organization Lab\Lab5\Pipeline_Soc\SOC\SOC.xpr
+# Log file: C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/vivado.log
+# Journal file: C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project -read_only {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado2020/Vivado/2020.1/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'VGA_0' is locked:
+* Project containing IP 'VGA_0' is read-only.
+WARNING: [IP_Flow 19-2162] IP 'SSeg7_Dev_0' is locked:
+* Project containing IP 'SSeg7_Dev_0' is read-only.
+WARNING: [IP_Flow 19-2162] IP 'RAM_B' is locked:
+* Project containing IP 'RAM_B' is read-only. * IP definition 'Block Memory Generator (8.4)' for IP 'RAM_B' (customized with software release 2017.4) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'ROM_D' is locked:
+* Project containing IP 'ROM_D' is read-only. * IP definition 'Distributed Memory Generator (8.0)' for IP 'ROM_D' (customized with software release 2017.4) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'Pipeline_CPU_0' is locked:
+* Project containing IP 'Pipeline_CPU_0' is read-only. * IP 'Pipeline_CPU_0' contains one or more locked subcores.
+WARNING: [Project 1-229] Project 'SOC.xpr' is read-only and therefore could not be upgraded for this version of Vivado.  Use 'File | Save Project As...' if you wish to save an upgraded copy.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 1215.250 ; gain = 0.000
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Sep  5 22:12:10 2022...

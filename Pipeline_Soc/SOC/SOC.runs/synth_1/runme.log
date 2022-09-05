@@ -1,0 +1,1155 @@
+
+*** Running vivado
+    with args -log CSSTE.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source CSSTE.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source CSSTE.tcl -notrace
+Command: synth_design -top CSSTE -part xc7k160tffg676-2L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k160t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k160t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 25888 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 408.801 ; gain = 101.059
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'CSSTE' [C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/new/CSSTE.v:23]
+INFO: [Synth 8-638] synthesizing module 'Pipeline_CPU_0' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/synth/Pipeline_CPU_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'Pipeline_CPU' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/new/Pipeline_CPU.v:23]
+INFO: [Synth 8-638] synthesizing module 'Pipeline_IF_0' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Pipeline_IF_0/synth/Pipeline_IF_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'Pipeline_IF' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Pipeline_IF_0/new/Pipeline_IF.v:3]
+INFO: [Synth 8-638] synthesizing module 'MUX2T1_32_0' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Pipeline_Ex_0/ip/MUX2T1_32_0/synth/MUX2T1_32_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'MUX2T1_32' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Pipeline_Ex_0/ip/MUX2T1_32_0/MUX2T1_32.v:23]
+INFO: [Synth 8-256] done synthesizing module 'MUX2T1_32' (1#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Pipeline_Ex_0/ip/MUX2T1_32_0/MUX2T1_32.v:23]
+INFO: [Synth 8-256] done synthesizing module 'MUX2T1_32_0' (2#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Pipeline_Ex_0/ip/MUX2T1_32_0/synth/MUX2T1_32_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'REG32_0' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Pipeline_IF_0/ip/REG32_0/synth/REG32_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'REG32' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Pipeline_IF_0/ip/REG32_0/PC.v:4]
+INFO: [Synth 8-256] done synthesizing module 'REG32' (3#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Pipeline_IF_0/ip/REG32_0/PC.v:4]
+INFO: [Synth 8-256] done synthesizing module 'REG32_0' (4#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Pipeline_IF_0/ip/REG32_0/synth/REG32_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'add_32_0' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Pipeline_Ex_0/ip/add_32_0/synth/add_32_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'add_32' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Pipeline_Ex_0/ip/add_32_1/add_32.v:23]
+INFO: [Synth 8-256] done synthesizing module 'add_32' (5#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Pipeline_Ex_0/ip/add_32_1/add_32.v:23]
+INFO: [Synth 8-256] done synthesizing module 'add_32_0' (6#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Pipeline_Ex_0/ip/add_32_0/synth/add_32_0.v:57]
+INFO: [Synth 8-256] done synthesizing module 'Pipeline_IF' (7#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Pipeline_IF_0/new/Pipeline_IF.v:3]
+INFO: [Synth 8-256] done synthesizing module 'Pipeline_IF_0' (8#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Pipeline_IF_0/synth/Pipeline_IF_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'IF_reg_ID_0' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/IF_reg_ID_0/synth/IF_reg_ID_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'IF_reg_ID' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/IF_reg_ID_0/IF_reg_ID.v:3]
+INFO: [Synth 8-256] done synthesizing module 'IF_reg_ID' (9#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/IF_reg_ID_0/IF_reg_ID.v:3]
+INFO: [Synth 8-256] done synthesizing module 'IF_reg_ID_0' (10#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/IF_reg_ID_0/synth/IF_reg_ID_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'Pipeline_ID_0' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Pipeline_ID_0/synth/Pipeline_ID_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'Pipeline_ID' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Pipeline_ID_0/new/Pipeline_ID.v:3]
+INFO: [Synth 8-638] synthesizing module 'Regs_0' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Pipeline_ID_0/ip/Regs_0/synth/Regs_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'Regs' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Pipeline_ID_0/ip/Regs_0/sources_1/new/Regs.v:1]
+INFO: [Synth 8-256] done synthesizing module 'Regs' (11#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Pipeline_ID_0/ip/Regs_0/sources_1/new/Regs.v:1]
+INFO: [Synth 8-256] done synthesizing module 'Regs_0' (12#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Pipeline_ID_0/ip/Regs_0/synth/Regs_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'ImmGen_0' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Pipeline_ID_0/ip/ImmGen_0/synth/ImmGen_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'ImmGen' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Pipeline_ID_0/ip/ImmGen_0/ImmGen.v:3]
+INFO: [Synth 8-226] default block is never used [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Pipeline_ID_0/ip/ImmGen_0/ImmGen.v:9]
+INFO: [Synth 8-256] done synthesizing module 'ImmGen' (13#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Pipeline_ID_0/ip/ImmGen_0/ImmGen.v:3]
+INFO: [Synth 8-256] done synthesizing module 'ImmGen_0' (14#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Pipeline_ID_0/ip/ImmGen_0/synth/ImmGen_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'SCPU_ctrl_0' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Pipeline_ID_0/ip/SCPU_ctrl_0/synth/SCPU_ctrl_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'SCPU_ctrl' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Pipeline_ID_0/ip/SCPU_ctrl_0/SCPU_ctrl.v:2]
+INFO: [Synth 8-256] done synthesizing module 'SCPU_ctrl' (15#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Pipeline_ID_0/ip/SCPU_ctrl_0/SCPU_ctrl.v:2]
+INFO: [Synth 8-256] done synthesizing module 'SCPU_ctrl_0' (16#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Pipeline_ID_0/ip/SCPU_ctrl_0/synth/SCPU_ctrl_0.v:57]
+INFO: [Synth 8-256] done synthesizing module 'Pipeline_ID' (17#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Pipeline_ID_0/new/Pipeline_ID.v:3]
+INFO: [Synth 8-256] done synthesizing module 'Pipeline_ID_0' (18#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Pipeline_ID_0/synth/Pipeline_ID_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'ID_reg_Ex_0' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/ID_reg_Ex_0/synth/ID_reg_Ex_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'ID_reg_Ex' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/ID_reg_Ex_0/ID_reg_EX.v:1]
+INFO: [Synth 8-256] done synthesizing module 'ID_reg_Ex' (19#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/ID_reg_Ex_0/ID_reg_EX.v:1]
+INFO: [Synth 8-256] done synthesizing module 'ID_reg_Ex_0' (20#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/ID_reg_Ex_0/synth/ID_reg_Ex_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'Pipeline_Ex_0' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Pipeline_Ex_0/synth/Pipeline_Ex_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'Pipeline_Ex' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Pipeline_Ex_0/new/Pipeline_EX.v:3]
+INFO: [Synth 8-638] synthesizing module 'add_32_1' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Pipeline_Ex_0/ip/add_32_1/synth/add_32_1.v:57]
+INFO: [Synth 8-256] done synthesizing module 'add_32_1' (21#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Pipeline_Ex_0/ip/add_32_1/synth/add_32_1.v:57]
+INFO: [Synth 8-638] synthesizing module 'ALU_0' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Pipeline_Ex_0/ip/ALU_0/synth/ALU_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'ALU' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Pipeline_Ex_0/ip/ALU_0/ALU.v:3]
+	Parameter one bound to: 1 - type: integer 
+	Parameter zero_0 bound to: 0 - type: integer 
+INFO: [Synth 8-226] default block is never used [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Pipeline_Ex_0/ip/ALU_0/ALU.v:11]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (22#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Pipeline_Ex_0/ip/ALU_0/ALU.v:3]
+INFO: [Synth 8-256] done synthesizing module 'ALU_0' (23#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Pipeline_Ex_0/ip/ALU_0/synth/ALU_0.v:57]
+INFO: [Synth 8-256] done synthesizing module 'Pipeline_Ex' (24#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Pipeline_Ex_0/new/Pipeline_EX.v:3]
+INFO: [Synth 8-256] done synthesizing module 'Pipeline_Ex_0' (25#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Pipeline_Ex_0/synth/Pipeline_Ex_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'Ex_reg_Mem_0' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Ex_reg_Mem_0/synth/Ex_reg_Mem_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'Ex_reg_Mem' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Ex_reg_Mem_0/EX_reg_MEM.v:3]
+INFO: [Synth 8-256] done synthesizing module 'Ex_reg_Mem' (26#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Ex_reg_Mem_0/EX_reg_MEM.v:3]
+INFO: [Synth 8-256] done synthesizing module 'Ex_reg_Mem_0' (27#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Ex_reg_Mem_0/synth/Ex_reg_Mem_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'Pipeline_Mem_0' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Pipeline_Mem_0/synth/Pipeline_Mem_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'Pipeline_Mem' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Pipeline_Mem_0/Pipeline_Mem.v:22]
+INFO: [Synth 8-256] done synthesizing module 'Pipeline_Mem' (28#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Pipeline_Mem_0/Pipeline_Mem.v:22]
+INFO: [Synth 8-256] done synthesizing module 'Pipeline_Mem_0' (29#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Pipeline_Mem_0/synth/Pipeline_Mem_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'Mem_reg_WB_0' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Mem_reg_WB_0/synth/Mem_reg_WB_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'Mem_reg_WB' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Mem_reg_WB_0/Mem_reg_WB.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Mem_reg_WB' (30#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Mem_reg_WB_0/Mem_reg_WB.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Mem_reg_WB_0' (31#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Mem_reg_WB_0/synth/Mem_reg_WB_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'Pipeline_WB_0' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Pipeline_WB_0/synth/Pipeline_WB_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'Pipeline_WB' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Pipeline_WB_0/new/Pipeline_WB.v:23]
+INFO: [Synth 8-638] synthesizing module 'MUX4T1_32_0' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Pipeline_WB_0/ip/MUX4T1_32_0/synth/MUX4T1_32_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'MUX4T1_32' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Pipeline_WB_0/ip/MUX4T1_32_0/MUX4T1_32.v:23]
+INFO: [Synth 8-256] done synthesizing module 'MUX4T1_32' (32#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Pipeline_WB_0/ip/MUX4T1_32_0/MUX4T1_32.v:23]
+INFO: [Synth 8-256] done synthesizing module 'MUX4T1_32_0' (33#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Pipeline_WB_0/ip/MUX4T1_32_0/synth/MUX4T1_32_0.v:57]
+INFO: [Synth 8-256] done synthesizing module 'Pipeline_WB' (34#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Pipeline_WB_0/new/Pipeline_WB.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Pipeline_WB_0' (35#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Pipeline_WB_0/synth/Pipeline_WB_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'stall_0' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/stall_0/synth/stall_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'stall' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/stall_0/stall.v:23]
+INFO: [Synth 8-256] done synthesizing module 'stall' (36#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/stall_0/stall.v:23]
+INFO: [Synth 8-256] done synthesizing module 'stall_0' (37#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/stall_0/synth/stall_0.v:57]
+WARNING: [Synth 8-3848] Net CPU_MIO in module/entity Pipeline_CPU does not have driver. [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/new/Pipeline_CPU.v:30]
+INFO: [Synth 8-256] done synthesizing module 'Pipeline_CPU' (38#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/new/Pipeline_CPU.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Pipeline_CPU_0' (39#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/synth/Pipeline_CPU_0.v:57]
+WARNING: [Synth 8-350] instance 'U1' of module 'Pipeline_CPU_0' requires 49 connections, but only 48 given [C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/new/CSSTE.v:107]
+INFO: [Synth 8-638] synthesizing module 'ROM_D' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/ROM_D/synth/ROM_D.vhd:66]
+	Parameter C_FAMILY bound to: kintex7 - type: string 
+	Parameter C_ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_DEPTH bound to: 1024 - type: integer 
+	Parameter C_HAS_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_D bound to: 0 - type: integer 
+	Parameter C_HAS_DPO bound to: 0 - type: integer 
+	Parameter C_HAS_DPRA bound to: 0 - type: integer 
+	Parameter C_HAS_I_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_SPO bound to: 1 - type: integer 
+	Parameter C_HAS_WE bound to: 0 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: ROM_D.mif - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_QCE_JOINED bound to: 0 - type: integer 
+	Parameter C_QUALIFY_WE bound to: 0 - type: integer 
+	Parameter C_READ_MIF bound to: 1 - type: integer 
+	Parameter C_REG_A_D_INPUTS bound to: 0 - type: integer 
+	Parameter C_REG_DPRA_INPUT bound to: 0 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 1 - type: integer 
+	Parameter C_WIDTH bound to: 32 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'dist_mem_gen_v8_0_12' declared at 'c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/ROM_D/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3237' bound to instance 'U0' of component 'dist_mem_gen_v8_0_12' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/ROM_D/synth/ROM_D.vhd:132]
+INFO: [Synth 8-256] done synthesizing module 'ROM_D' (43#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/ROM_D/synth/ROM_D.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'RAM_B' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/RAM_B/synth/RAM_B.vhd:69]
+	Parameter C_FAMILY bound to: kintex7 - type: string 
+	Parameter C_XDEVICEFAMILY bound to: kintex7 - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: RAM_B.mif - type: string 
+	Parameter C_INIT_FILE bound to: RAM_B.mem - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_RSTA bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: NO_CHANGE - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 32 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 32 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 1024 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 1024 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 10 - type: integer 
+	Parameter C_HAS_RSTB bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 32 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 32 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 1024 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 1024 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 10 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_USE_URAM bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter C_COUNT_36K_BRAM bound to: 1 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 0 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     2.632725 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_1' declared at 'c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/RAM_B/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195313' bound to instance 'U0' of component 'blk_mem_gen_v8_4_1' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/RAM_B/synth/RAM_B.vhd:232]
+INFO: [Synth 8-256] done synthesizing module 'RAM_B' (52#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/RAM_B/synth/RAM_B.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'MIO_BUS' [C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/MIO_BUS.v:15]
+INFO: [Synth 8-638] synthesizing module 'Multi_8CH32' [C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Multi_8CH32.v:15]
+INFO: [Synth 8-638] synthesizing module 'SSeg7_Dev_0' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/SSeg7_Dev_0/synth/SSeg7_Dev_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'SSeg7_Dev' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/SSeg7_Dev_0/SSeg7_Dev.v:23]
+INFO: [Synth 8-638] synthesizing module 'MUX2T1_64' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/SSeg7_Dev_0/MUX2T1_64.v:23]
+INFO: [Synth 8-256] done synthesizing module 'MUX2T1_64' (53#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/SSeg7_Dev_0/MUX2T1_64.v:23]
+INFO: [Synth 8-638] synthesizing module 'P2S' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/SSeg7_Dev_0/P2S.v:23]
+	Parameter DATA_BITS bound to: 64 - type: integer 
+	Parameter DATA_COUNT_BITS bound to: 6 - type: integer 
+	Parameter S_IDLE bound to: 0 - type: integer 
+	Parameter S_TRAN bound to: 1 - type: integer 
+	Parameter S_CLKN bound to: 2 - type: integer 
+	Parameter S_DONE bound to: 3 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/SSeg7_Dev_0/P2S.v:63]
+WARNING: [Synth 8-5788] Register buffer_reg in module P2S is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/SSeg7_Dev_0/P2S.v:51]
+INFO: [Synth 8-256] done synthesizing module 'P2S' (54#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/SSeg7_Dev_0/P2S.v:23]
+INFO: [Synth 8-638] synthesizing module 'HexTo8SEG' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/SSeg7_Dev_0/HexTo8SEG.v:23]
+INFO: [Synth 8-638] synthesizing module 'Hex2Seg' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/SSeg7_Dev_0/HexTo8SEG.v:43]
+INFO: [Synth 8-638] synthesizing module 'MC14495_ZJU' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/SSeg7_Dev_0/MC14495_ZJU.v:23]
+INFO: [Synth 8-638] synthesizing module 'INV' [D:/vivado2017/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22577]
+INFO: [Synth 8-256] done synthesizing module 'INV' (55#1) [D:/vivado2017/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22577]
+INFO: [Synth 8-638] synthesizing module 'AND4' [D:/vivado2017/Vivado/2017.4/scripts/rt/data/unisim_comp.v:108]
+INFO: [Synth 8-256] done synthesizing module 'AND4' (56#1) [D:/vivado2017/Vivado/2017.4/scripts/rt/data/unisim_comp.v:108]
+INFO: [Synth 8-638] synthesizing module 'OR4' [D:/vivado2017/Vivado/2017.4/scripts/rt/data/unisim_comp.v:30939]
+INFO: [Synth 8-256] done synthesizing module 'OR4' (57#1) [D:/vivado2017/Vivado/2017.4/scripts/rt/data/unisim_comp.v:30939]
+INFO: [Synth 8-638] synthesizing module 'AND3' [D:/vivado2017/Vivado/2017.4/scripts/rt/data/unisim_comp.v:60]
+INFO: [Synth 8-256] done synthesizing module 'AND3' (58#1) [D:/vivado2017/Vivado/2017.4/scripts/rt/data/unisim_comp.v:60]
+INFO: [Synth 8-638] synthesizing module 'OR3' [D:/vivado2017/Vivado/2017.4/scripts/rt/data/unisim_comp.v:30891]
+INFO: [Synth 8-256] done synthesizing module 'OR3' (59#1) [D:/vivado2017/Vivado/2017.4/scripts/rt/data/unisim_comp.v:30891]
+INFO: [Synth 8-638] synthesizing module 'AND2' [D:/vivado2017/Vivado/2017.4/scripts/rt/data/unisim_comp.v:14]
+INFO: [Synth 8-256] done synthesizing module 'AND2' (60#1) [D:/vivado2017/Vivado/2017.4/scripts/rt/data/unisim_comp.v:14]
+INFO: [Synth 8-638] synthesizing module 'OR2' [D:/vivado2017/Vivado/2017.4/scripts/rt/data/unisim_comp.v:30845]
+INFO: [Synth 8-256] done synthesizing module 'OR2' (61#1) [D:/vivado2017/Vivado/2017.4/scripts/rt/data/unisim_comp.v:30845]
+INFO: [Synth 8-256] done synthesizing module 'MC14495_ZJU' (62#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/SSeg7_Dev_0/MC14495_ZJU.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Hex2Seg' (63#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/SSeg7_Dev_0/HexTo8SEG.v:43]
+INFO: [Synth 8-256] done synthesizing module 'HexTo8SEG' (64#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/SSeg7_Dev_0/HexTo8SEG.v:23]
+INFO: [Synth 8-638] synthesizing module 'SSeg_map' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/SSeg7_Dev_0/SSeg_map.v:23]
+INFO: [Synth 8-256] done synthesizing module 'SSeg_map' (65#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/SSeg7_Dev_0/SSeg_map.v:23]
+INFO: [Synth 8-256] done synthesizing module 'SSeg7_Dev' (66#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/SSeg7_Dev_0/SSeg7_Dev.v:23]
+INFO: [Synth 8-256] done synthesizing module 'SSeg7_Dev_0' (67#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/SSeg7_Dev_0/synth/SSeg7_Dev_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'SPIO' [C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/SPIO.v:15]
+WARNING: [Synth 8-350] instance 'U7' of module 'SPIO' requires 12 connections, but only 11 given [C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/new/CSSTE.v:223]
+INFO: [Synth 8-638] synthesizing module 'clk_div' [C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/clk_div.v:15]
+INFO: [Synth 8-638] synthesizing module 'SAnti_jitter' [C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/SAnti_jitter.v:15]
+WARNING: [Synth 8-350] instance 'U9' of module 'SAnti_jitter' requires 13 connections, but only 8 given [C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/new/CSSTE.v:243]
+INFO: [Synth 8-638] synthesizing module 'Counter_x' [C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Counter_x.v:15]
+INFO: [Synth 8-638] synthesizing module 'VGA_0' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/synth/VGA_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'VGA' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:23]
+INFO: [Synth 8-638] synthesizing module 'VgaController' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/imports/vga/VgaController.v:1]
+	Parameter HS_1 bound to: 96 - type: integer 
+	Parameter VS_1 bound to: 2 - type: integer 
+	Parameter HS_2 bound to: 157 - type: integer 
+	Parameter VS_2 bound to: 57 - type: integer 
+	Parameter WIDTH bound to: 640 - type: integer 
+	Parameter HEIGHT bound to: 480 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'VgaController' (68#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/imports/vga/VgaController.v:1]
+INFO: [Synth 8-638] synthesizing module 'VgaDisplay' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/imports/vga/VgaDisplay.v:1]
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/imports/vga/VgaDisplay.v:14]
+INFO: [Synth 8-3876] $readmem data file 'D://vga_debugger.mem' is read successfully [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/imports/vga/VgaDisplay.v:15]
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/imports/vga/VgaDisplay.v:24]
+INFO: [Synth 8-3876] $readmem data file 'D://font_8x16.mem' is read successfully [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/imports/vga/VgaDisplay.v:25]
+INFO: [Synth 8-256] done synthesizing module 'VgaDisplay' (69#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/imports/vga/VgaDisplay.v:1]
+INFO: [Synth 8-638] synthesizing module 'VgaDebugger' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/imports/vga/VgaDebugger.v:5]
+INFO: [Synth 8-638] synthesizing module 'Hex2Ascii' [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/Hex2Ascii.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Hex2Ascii' (70#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/Hex2Ascii.v:23]
+INFO: [Synth 8-256] done synthesizing module 'VgaDebugger' (71#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/imports/vga/VgaDebugger.v:5]
+INFO: [Synth 8-256] done synthesizing module 'VGA' (72#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:23]
+INFO: [Synth 8-256] done synthesizing module 'VGA_0' (73#1) [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/synth/VGA_0.v:57]
+INFO: [Synth 8-256] done synthesizing module 'CSSTE' (74#1) [C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/new/CSSTE.v:23]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[63]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[62]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[61]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[60]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[59]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[58]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[57]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[56]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[55]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[54]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[53]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[52]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[51]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[50]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[49]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[48]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[47]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[46]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[45]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[44]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[43]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[42]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[41]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[40]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[39]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[38]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[37]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[36]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[35]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[34]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[33]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[32]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port SSRA
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port CLKB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port SSRB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port ENB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port REGCEB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port WEB[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port ADDRB[9]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port ADDRB[8]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port ADDRB[7]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port ADDRB[6]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port ADDRB[5]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port ADDRB[4]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port ADDRB[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port ADDRB[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port ADDRB[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port ADDRB[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[35]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[34]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[33]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[32]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[31]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[30]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[29]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[28]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[27]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[26]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[25]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[24]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[23]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[22]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[21]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[20]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[19]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[18]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[17]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[16]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[15]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[14]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[13]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[12]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[11]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[10]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[9]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[8]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[7]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[6]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[5]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[4]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port DINB[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port SLEEP
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port INJECTSBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port INJECTDBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port ECCPIPECE
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port ram_rstram_b
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper_init has unconnected port ram_rstreg_b
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port REGCEA[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port WEA[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port WEA[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port WEA[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port REGCEB[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port WEB[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port WEB[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port WEB[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port INJECTSBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port INJECTDBITERR
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:01:29 ; elapsed = 00:01:30 . Memory (MB): peak = 688.508 ; gain = 380.766
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin U3:MIO_ready to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/Pipeline_CPU_0/ip/Pipeline_ID_0/new/Pipeline_ID.v:86]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_inst[31] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_inst[30] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_inst[29] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_inst[28] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_inst[27] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_inst[26] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_inst[25] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_inst[24] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_inst[23] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_inst[22] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_inst[21] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_inst[20] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_inst[19] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_inst[18] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_inst[17] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_inst[16] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_inst[15] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_inst[14] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_inst[13] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_inst[12] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_inst[11] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_inst[10] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_inst[9] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_inst[8] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_inst[7] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_inst[6] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_inst[5] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_inst[4] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_inst[3] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_inst[2] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_inst[1] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_inst[0] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rd[4] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rd[3] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rd[2] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rd[1] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rd[0] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs1[4] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs1[3] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs1[2] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs1[1] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs1[0] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs2[4] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs2[3] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs2[2] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs2[1] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs2[0] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs1_val[31] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs1_val[30] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs1_val[29] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs1_val[28] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs1_val[27] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs1_val[26] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs1_val[25] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs1_val[24] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs1_val[23] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs1_val[22] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs1_val[21] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs1_val[20] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs1_val[19] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs1_val[18] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs1_val[17] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs1_val[16] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs1_val[15] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs1_val[14] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs1_val[13] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs1_val[12] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs1_val[11] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs1_val[10] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs1_val[9] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs1_val[8] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs1_val[7] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs1_val[6] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs1_val[5] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs1_val[4] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs1_val[3] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs1_val[2] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs1_val[1] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs1_val[0] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs2_val[31] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs2_val[30] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs2_val[29] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs2_val[28] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs2_val[27] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs2_val[26] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs2_val[25] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs2_val[24] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs2_val[23] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs2_val[22] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs2_val[21] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs2_val[20] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs2_val[19] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs2_val[18] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs2_val[17] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs2_val[16] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs2_val[15] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs2_val[14] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs2_val[13] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+WARNING: [Synth 8-3295] tying undriven pin vga_debugger:IdEx_rs2_val[12] to constant 0 [c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.srcs/sources_1/ip/VGA_0/new/VGA.v:77]
+INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:29 ; elapsed = 00:01:31 . Memory (MB): peak = 688.508 ; gain = 380.766
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 321 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7k160tffg676-2L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Org-Sword.xdc]
+Finished Parsing XDC File [C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Org-Sword.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Org-Sword.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/CSSTE_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/CSSTE_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 320 instances were transformed.
+  AND2 => LUT2: 8 instances
+  AND3 => LUT3: 88 instances
+  AND4 => LUT4: 72 instances
+  INV => LUT1: 40 instances
+  OR2 => LUT2: 56 instances
+  OR3 => LUT3: 24 instances
+  OR4 => LUT4: 32 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 848.738 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:44 ; elapsed = 00:01:47 . Memory (MB): peak = 848.738 ; gain = 540.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k160tffg676-2L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:44 ; elapsed = 00:01:47 . Memory (MB): peak = 848.738 ; gain = 540.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U1/inst/U1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U1/inst/U1/inst/MUX2T1_32_U. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U1/inst/U1/inst/REG32_U. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U1/inst/U1/inst/add32_U. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U1/inst/U10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U1/inst/U2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U1/inst/U3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U1/inst/U3/inst/U1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U1/inst/U3/inst/U2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U1/inst/U3/inst/U3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U1/inst/U4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U1/inst/U5. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U1/inst/U5/inst/U1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U1/inst/U5/inst/U2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U1/inst/U5/inst/U3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U1/inst/U5/inst/U4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U1/inst/U6. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U1/inst/U7. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U1/inst/U8. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U1/inst/U9. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U1/inst/U9/inst/U1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U11. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U6. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:45 ; elapsed = 00:01:47 . Memory (MB): peak = 848.738 ; gain = 540.996
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "register_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Rs1_used" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "Rs2_used" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "ImmSel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "ALUSrc_B" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "MemtoReg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Jump" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "Branch" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "BranchN" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5587] ROM size for "RegWrite" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "MemRW" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "ALU_Control" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "shift_count" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "v_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5547] Trying to map ROM "fonts_data" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5546] ROM "display_wen" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:53 ; elapsed = 00:01:56 . Memory (MB): peak = 848.738 ; gain = 540.996
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 3     
+	   2 Input      9 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 50    
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 3     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 21    
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   4 Input     64 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 16    
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	 428 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 42    
+	   7 Input      1 Bit        Muxes := 6     
+	   9 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 5     
+	 428 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module MUX2T1_32 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module REG32 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module add_32 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module IF_reg_ID 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 2     
+Module Regs 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 31    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 31    
+Module ImmGen 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module SCPU_ctrl 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      3 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 2     
+	   7 Input      2 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 6     
+	   9 Input      1 Bit        Muxes := 2     
+Module ID_reg_Ex 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+Module Ex_reg_Mem 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 6     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
+Module Mem_reg_WB 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
+Module MUX4T1_32 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module stall 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module MUX2T1_64 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+Module P2S 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input     64 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 5     
+Module VgaController 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 3     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module VgaDisplay 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
+Module VgaDebugger 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	 428 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	 428 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 600 (col length:100)
+BRAMs: 650 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "inst/zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "inst/vga_controller/v_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5546] ROM "inst/vga_debugger/display_wen" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3463] Infeasible ramstyle = block set for RAM inst/vga_display/display_data_reg,trying to implement using LUTRAM
+WARNING: [Synth 8-3463] Infeasible ramstyle = block set for RAM inst/vga_display/display_data_reg,trying to implement using LUTRAM
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:19 ; elapsed = 00:02:22 . Memory (MB): peak = 848.738 ; gain = 540.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|rom         | rom[1023]  | 1024x32       | LUT            | 
+|VgaDisplay  | p_0_out    | 4096x8        | LUT            | 
+|VGA_0       | p_0_out    | 4096x8        | LUT            | 
++------------+------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+-----------------------------------+-----------+----------------------+--------------------------------+
+|Module Name | RTL Object                        | Inference | Size (Depth x Width) | Primitives                     | 
++------------+-----------------------------------+-----------+----------------------+--------------------------------+
+|U11         | inst/vga_display/display_data_reg | Implied   | 4 K x 7              | RAM64X1D x 128  RAM64M x 128   | 
++------------+-----------------------------------+-----------+----------------------+--------------------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:29 ; elapsed = 00:02:32 . Memory (MB): peak = 898.625 ; gain = 590.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:30 ; elapsed = 00:02:33 . Memory (MB): peak = 900.539 ; gain = 592.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+-----------------------------------+-----------+----------------------+--------------------------------+
+|Module Name | RTL Object                        | Inference | Size (Depth x Width) | Primitives                     | 
++------------+-----------------------------------+-----------+----------------------+--------------------------------+
+|U11         | inst/vga_display/display_data_reg | Implied   | 4 K x 7              | RAM64X1D x 128  RAM64M x 128   | 
++------------+-----------------------------------+-----------+----------------------+--------------------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:33 ; elapsed = 00:02:36 . Memory (MB): peak = 936.480 ; gain = 628.738
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:34 ; elapsed = 00:02:38 . Memory (MB): peak = 936.480 ; gain = 628.738
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:34 ; elapsed = 00:02:38 . Memory (MB): peak = 936.480 ; gain = 628.738
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:35 ; elapsed = 00:02:38 . Memory (MB): peak = 936.480 ; gain = 628.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:35 ; elapsed = 00:02:38 . Memory (MB): peak = 936.480 ; gain = 628.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:35 ; elapsed = 00:02:39 . Memory (MB): peak = 936.480 ; gain = 628.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:35 ; elapsed = 00:02:39 . Memory (MB): peak = 936.480 ; gain = 628.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |MIO_BUS       |         1|
+|2     |Multi_8CH32   |         1|
+|3     |SPIO          |         1|
+|4     |clk_div       |         1|
+|5     |SAnti_jitter  |         1|
+|6     |Counter_x     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------------------+------+
+|      |Cell                |Count |
++------+--------------------+------+
+|1     |Counter_x_bbox_5    |     1|
+|2     |MIO_BUS_bbox_0      |     1|
+|3     |Multi_8CH32_bbox_1  |     1|
+|4     |SAnti_jitter_bbox_4 |     1|
+|5     |SPIO_bbox_2         |     1|
+|6     |clk_div_bbox_3      |     1|
+|7     |AND2                |     8|
+|8     |AND3                |    88|
+|9     |AND4                |    72|
+|10    |BUFG                |     1|
+|11    |CARRY4              |    55|
+|12    |INV                 |    40|
+|13    |LUT1                |     7|
+|14    |LUT2                |   479|
+|15    |LUT3                |   145|
+|16    |LUT4                |   292|
+|17    |LUT5                |   499|
+|18    |LUT6                |  1970|
+|19    |MUXF7               |   531|
+|20    |MUXF8               |   194|
+|21    |OR2                 |    56|
+|22    |OR3                 |    24|
+|23    |OR4                 |    32|
+|24    |RAM64M              |   128|
+|25    |RAM64X1D            |   128|
+|26    |RAMB36E1            |     1|
+|27    |FDCE                |  1715|
+|28    |FDRE                |   112|
+|29    |FDSE                |     2|
+|30    |IBUF                |    22|
+|31    |OBUF                |    22|
++------+--------------------+------+
+
+Report Instance Areas: 
++------+-----------------------------------------------+------------------------------+------+
+|      |Instance                                       |Module                        |Cells |
++------+-----------------------------------------------+------------------------------+------+
+|1     |top                                            |                              |  6922|
+|2     |  U1                                           |Pipeline_CPU_0                |  3454|
+|3     |    inst                                       |Pipeline_CPU                  |  3454|
+|4     |      U1                                       |Pipeline_IF_0                 |   136|
+|5     |        inst                                   |Pipeline_IF                   |   136|
+|6     |          MUX2T1_32_U                          |MUX2T1_32_0__1                |    32|
+|7     |            inst                               |MUX2T1_32_16                  |    32|
+|8     |          REG32_U                              |REG32_0                       |    64|
+|9     |            inst                               |REG32                         |    64|
+|10    |          add32_U                              |add_32_0__1                   |    40|
+|11    |            inst                               |add_32_15                     |    40|
+|12    |      U2                                       |IF_reg_ID_0                   |   163|
+|13    |        inst                                   |IF_reg_ID                     |   163|
+|14    |      U3                                       |Pipeline_ID_0                 |  1960|
+|15    |        inst                                   |Pipeline_ID                   |  1960|
+|16    |          U1                                   |Regs_0                        |  1929|
+|17    |            inst                               |Regs                          |  1929|
+|18    |          U2                                   |ImmGen_0                      |    14|
+|19    |            inst                               |ImmGen                        |    13|
+|20    |          U3                                   |SCPU_ctrl_0                   |    17|
+|21    |      U4                                       |ID_reg_Ex_0                   |   355|
+|22    |        inst                                   |ID_reg_Ex                     |   355|
+|23    |      U5                                       |Pipeline_Ex_0                 |   412|
+|24    |        inst                                   |Pipeline_Ex                   |   412|
+|25    |          U1                                   |add_32_0                      |    40|
+|26    |            inst                               |add_32_14                     |    40|
+|27    |          U2                                   |add_32_1                      |    40|
+|28    |            inst                               |add_32                        |    40|
+|29    |          U3                                   |MUX2T1_32_0                   |    32|
+|30    |            inst                               |MUX2T1_32                     |    32|
+|31    |          U4                                   |ALU_0                         |   300|
+|32    |            inst                               |ALU                           |   128|
+|33    |      U6                                       |Ex_reg_Mem_0                  |   206|
+|34    |        inst                                   |Ex_reg_Mem                    |   206|
+|35    |      U7                                       |Pipeline_Mem_0                |     1|
+|36    |        inst                                   |Pipeline_Mem                  |     1|
+|37    |      U8                                       |Mem_reg_WB_0                  |   169|
+|38    |        inst                                   |Mem_reg_WB                    |   169|
+|39    |      U9                                       |Pipeline_WB_0                 |    32|
+|40    |        inst                                   |Pipeline_WB                   |    32|
+|41    |          U1                                   |MUX4T1_32_0                   |    32|
+|42    |            inst                               |MUX4T1_32                     |    32|
+|43    |      U10                                      |stall_0                       |    20|
+|44    |  U2                                           |ROM_D                         |    75|
+|45    |    U0                                         |dist_mem_gen_v8_0_12          |    75|
+|46    |      \synth_options.dist_mem_inst             |dist_mem_gen_v8_0_12_synth    |    75|
+|47    |        \gen_rom.rom_inst                      |rom                           |    75|
+|48    |  U3                                           |RAM_B                         |     1|
+|49    |    U0                                         |blk_mem_gen_v8_4_1            |     1|
+|50    |      inst_blk_mem_gen                         |blk_mem_gen_v8_4_1_synth      |     1|
+|51    |        \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top               |     1|
+|52    |          \valid.cstr                          |blk_mem_gen_generic_cstr      |     1|
+|53    |            \ramloop[0].ram.r                  |blk_mem_gen_prim_width        |     1|
+|54    |              \prim_init.ram                   |blk_mem_gen_prim_wrapper_init |     1|
+|55    |  U6                                           |SSeg7_Dev_0                   |   483|
+|56    |    inst                                       |SSeg7_Dev                     |   483|
+|57    |      M2                                       |P2S                           |   154|
+|58    |      SM1                                      |HexTo8SEG                     |   329|
+|59    |        HTS0                                   |Hex2Seg                       |    41|
+|60    |          MSEG                                 |MC14495_ZJU_13                |    41|
+|61    |        HTS1                                   |Hex2Seg_0                     |    41|
+|62    |          MSEG                                 |MC14495_ZJU_12                |    41|
+|63    |        HTS2                                   |Hex2Seg_1                     |    41|
+|64    |          MSEG                                 |MC14495_ZJU_11                |    41|
+|65    |        HTS3                                   |Hex2Seg_2                     |    41|
+|66    |          MSEG                                 |MC14495_ZJU_10                |    41|
+|67    |        HTS4                                   |Hex2Seg_3                     |    41|
+|68    |          MSEG                                 |MC14495_ZJU_9                 |    41|
+|69    |        HTS5                                   |Hex2Seg_4                     |    41|
+|70    |          MSEG                                 |MC14495_ZJU_8                 |    41|
+|71    |        HTS6                                   |Hex2Seg_5                     |    41|
+|72    |          MSEG                                 |MC14495_ZJU_7                 |    41|
+|73    |        HTS7                                   |Hex2Seg_6                     |    42|
+|74    |          MSEG                                 |MC14495_ZJU                   |    42|
+|75    |  U11                                          |VGA_0                         |  2562|
+|76    |    inst                                       |VGA                           |  2562|
+|77    |      vga_controller                           |VgaController                 |   817|
+|78    |      vga_debugger                             |VgaDebugger                   |  1174|
+|79    |      vga_display                              |VgaDisplay                    |   571|
++------+-----------------------------------------------+------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:35 ; elapsed = 00:02:39 . Memory (MB): peak = 936.480 ; gain = 628.738
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 389 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:57 ; elapsed = 00:02:29 . Memory (MB): peak = 936.480 ; gain = 468.508
+Synthesis Optimization Complete : Time (s): cpu = 00:02:35 ; elapsed = 00:02:39 . Memory (MB): peak = 936.480 ; gain = 628.738
+INFO: [Project 1-571] Translating synthesized netlist
+Parsing EDIF File [C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/MIO_BUS.edf]
+Finished Parsing EDIF File [C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/MIO_BUS.edf]
+Parsing EDIF File [C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Multi_8CH32.edf]
+Finished Parsing EDIF File [C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Multi_8CH32.edf]
+Parsing EDIF File [C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/SPIO.edf]
+Finished Parsing EDIF File [C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/SPIO.edf]
+Parsing EDIF File [C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/clk_div.edf]
+Finished Parsing EDIF File [C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/clk_div.edf]
+Parsing EDIF File [C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/SAnti_jitter.edf]
+Finished Parsing EDIF File [C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/SAnti_jitter.edf]
+Parsing EDIF File [C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Counter_x.edf]
+Finished Parsing EDIF File [C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/Counter_x.edf]
+INFO: [Netlist 29-17] Analyzing 1477 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 2 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 576 instances were transformed.
+  AND2 => LUT2: 8 instances
+  AND3 => LUT3: 88 instances
+  AND4 => LUT4: 72 instances
+  INV => LUT1: 40 instances
+  OR2 => LUT2: 56 instances
+  OR3 => LUT3: 24 instances
+  OR4 => LUT4: 32 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 128 instances
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 128 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+212 Infos, 207 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:40 ; elapsed = 00:02:45 . Memory (MB): peak = 943.066 ; gain = 646.832
+INFO: [Common 17-1381] The checkpoint 'C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.runs/synth_1/CSSTE.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file CSSTE_utilization_synth.rpt -pb CSSTE_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.176 . Memory (MB): peak = 943.066 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu May 19 16:12:32 2022...

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon Sep  5 22:06:49 2022
+# Process ID: 17848
+# Current directory: C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent40976 C:\Users\lenovo\Desktop\Computer Organization Lab\Lab5\Pipeline_Soc\SOC\SOC.xpr
+# Log file: C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/vivado.log
+# Journal file: C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project -read_only {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.xpr}
+update_compile_order -fileset sources_1

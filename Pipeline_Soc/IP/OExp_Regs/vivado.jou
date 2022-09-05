@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue May 31 20:03:37 2022
+# Process ID: 30004
+# Current directory: C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/OExp_Regs
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent58496 C:\Users\lenovo\Desktop\Computer Organization Lab\Lab5\IP\OExp_Regs\OExp_Regs.xpr
+# Log file: C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/OExp_Regs/vivado.log
+# Journal file: C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/OExp_Regs\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP/OExp_Regs/OExp_Regs.xpr}
+update_compile_order -fileset sources_1

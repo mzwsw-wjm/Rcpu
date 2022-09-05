@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue May 31 19:46:44 2022
+# Process ID: 56448
+# Current directory: C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21116 C:\Users\lenovo\Desktop\Computer Organization Lab\Lab5\Pipeline_Soc\SOC\SOC.xpr
+# Log file: C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/vivado.log
+# Journal file: C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/Pipeline_Soc/SOC/SOC.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/lenovo/Desktop/Computer Organization Lab/Lab5/IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado2017/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:19 . Memory (MB): peak = 779.047 ; gain = 105.723
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue May 31 22:14:45 2022...
